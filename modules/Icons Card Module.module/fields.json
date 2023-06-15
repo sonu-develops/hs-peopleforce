@@ -1,0 +1,184 @@
+[ {
+  "id" : "5ece7b2b-870f-574d-496f-22465638f2d8",
+  "name" : "edit_heading",
+  "display_width" : null,
+  "label" : "Edit Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Do you need to manage documents?</h2>\n<p>Choose the features that help you solve specific challenges in your company</p>"
+}, {
+  "id" : "0e147186-7ed2-4106-187c-dd124233168a",
+  "name" : "edit_button_group",
+  "display_width" : null,
+  "label" : "Edit Button Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "27bd2e2d-357f-1d6a-cd7d-86ed7aafd2a5",
+    "name" : "edit_icon",
+    "display_width" : null,
+    "label" : "Edit Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882235%20(1).png",
+      "alt" : "Frame 787882235 (1)",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 64,
+      "max_width" : 64,
+      "max_height" : 64
+    }
+  }, {
+    "id" : "e533bcf6-30ec-d9bb-78b3-1627249c4e1c",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>"
+  }, {
+    "id" : "30aef0e7-82ef-1620-fb6a-6f55c3764e69",
+    "name" : "edit_button_link",
+    "display_width" : null,
+    "label" : "Edit Button Link",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "d0558061-0faa-f3a5-0bca-820946bea604",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Get started"
+    }, {
+      "id" : "ae35f91e-7c89-d86e-8b97-9b0eb5634966",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882235%20(1).png",
+      "alt" : "Frame 787882235 (1)",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 64,
+      "max_width" : 64,
+      "max_height" : 64
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_link" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882235%20(1).png",
+      "alt" : "Frame 787882235 (1)",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 64,
+      "max_width" : 64,
+      "max_height" : 64
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_link" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882235%20(1).png",
+      "alt" : "Frame 787882235 (1)",
+      "loading" : "lazy",
+      "width" : 64,
+      "height" : 64,
+      "max_width" : 64,
+      "max_height" : 64
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_link" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

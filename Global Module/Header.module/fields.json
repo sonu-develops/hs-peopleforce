@@ -1,0 +1,1456 @@
+[ {
+  "id" : "505152d3-aa93-8b0f-e9f4-0ed4594350ed",
+  "name" : "edit_logo_group",
+  "display_width" : null,
+  "label" : "Edit Logo Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ce4cc632-cf26-99e8-85fa-01f7a2720883",
+    "name" : "edit_logo",
+    "display_width" : null,
+    "label" : "Edit Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Untitled%20design%20(6).png",
+      "alt" : "Untitled design (6)",
+      "loading" : "lazy",
+      "width" : 160,
+      "height" : 40,
+      "max_width" : 160,
+      "max_height" : 40
+    }
+  }, {
+    "id" : "d3913d2c-0738-f099-1caf-13231781608c",
+    "name" : "edit_linking",
+    "display_width" : null,
+    "label" : "Edit Linking",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Untitled%20design%20(6).png",
+      "alt" : "Untitled design (6)",
+      "loading" : "lazy",
+      "width" : 160,
+      "height" : 40,
+      "max_width" : 160,
+      "max_height" : 40
+    },
+    "edit_linking" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "0dc20ca3-c37b-4b08-4c91-176e737ecc28",
+  "name" : "edit_main_navigation",
+  "display_width" : null,
+  "label" : "Edit Main  Navigation",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c72fb462-8040-236d-264d-f63bda35da08",
+    "name" : "products",
+    "display_width" : null,
+    "label" : "Products",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "367434f2-ba12-9ac1-1edb-31446f32a14d",
+      "name" : "products",
+      "display_width" : null,
+      "label" : "Products",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Products"
+    }, {
+      "id" : "7c47862c-aabe-e935-5666-0f21dc61ed7c",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "products" : "Products",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "645caad6-8caf-357c-58e1-81f8ebbb9fdb",
+    "name" : "pricing",
+    "display_width" : null,
+    "label" : "Pricing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "58f9342f-5504-d8c0-3c63-90a07adde306",
+      "name" : "products",
+      "display_width" : null,
+      "label" : "Products",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Pricing"
+    }, {
+      "id" : "31360e21-0e7c-dc2c-0d24-da9c0b7f0072",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "products" : "Pricing",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "ed8b7458-d699-a403-fb48-8296603f27bb",
+    "name" : "resources",
+    "display_width" : null,
+    "label" : "Resources",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "025e8bf5-b0b9-3bee-b160-4799f301206c",
+      "name" : "products",
+      "display_width" : null,
+      "label" : "Products",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Resources"
+    }, {
+      "id" : "f5d6e4ec-91d6-145a-20a8-0c18ae4d9526",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "products" : "Resources",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "0367686b-2fc2-b6da-91cf-6c4110a3a2c6",
+    "name" : "partners",
+    "display_width" : null,
+    "label" : "Partners",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "5bae74ba-66b7-0dc9-8562-ac0179067163",
+      "name" : "products",
+      "display_width" : null,
+      "label" : "Products",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Partners"
+    }, {
+      "id" : "8a9d6fb6-0d8b-73af-90d9-50e29ace728d",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "products" : "Partners",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "d5ee33e7-a771-41ad-5b59-42799d459cdf",
+    "name" : "about",
+    "display_width" : null,
+    "label" : "About",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "5557bd6a-8c59-b815-6777-df657d7c5fe7",
+      "name" : "products",
+      "display_width" : null,
+      "label" : "About",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "About Us"
+    }, {
+      "id" : "53467bba-83db-19ff-8ec9-352be8e992e0",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "products" : "About Us",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "products" : {
+      "products" : "Products",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "pricing" : {
+      "products" : "Pricing",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "resources" : {
+      "products" : "Resources",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "partners" : {
+      "products" : "Partners",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "about" : {
+      "products" : "About Us",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "107e328d-c51f-4607-d90d-c727d69b2606",
+  "name" : "edit_mega_menu_1",
+  "display_width" : null,
+  "label" : "Edit Mega Menu 1",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "48815e2a-3c47-f791-da60-01b629b9e242",
+    "name" : "menu_heading",
+    "display_width" : null,
+    "label" : "Menu Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "People<span style=\"color:#00B950;\">HR</span>"
+  }, {
+    "id" : "2bfa0134-5147-fac7-badf-4e7eded800a1",
+    "name" : "edit_sub_content",
+    "display_width" : null,
+    "label" : "Edit Sub Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Centralize all information in one place giving transparency inside the company."
+  }, {
+    "id" : "6d08e10b-15e8-d66e-38a9-ae4abe428e17",
+    "name" : "edit_content_listing_",
+    "display_width" : null,
+    "label" : "Edit Content Listing ",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "8d85284f-d82b-fe16-6404-acc43d0e449f",
+      "name" : "edit_text_content",
+      "display_width" : null,
+      "label" : "Edit Text Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "HRIS software"
+    }, {
+      "id" : "ba0c39ca-f5be-0869-008d-d6768d3b755d",
+      "name" : "edit_link",
+      "display_width" : null,
+      "label" : "Edit link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "menu_heading" : "People<span style=\"color:#00B950;\">HR</span>",
+    "edit_sub_content" : "Centralize all information in one place giving transparency inside the company.",
+    "edit_content_listing_" : [ {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_text_content" : "HRIS software",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ]
+}, {
+  "id" : "88f84781-6e46-d537-6a06-d3474b9cab3b",
+  "name" : "edit_mega_menu_2",
+  "display_width" : null,
+  "label" : "Edit Mega Menu 2",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "c4f2dddb-eb77-6497-07f4-f1d752b9fba2",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Blog"
+  }, {
+    "id" : "4ca2a4dd-ec62-f882-eec9-be9e45924281",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get new and unique perspectives on HR tech and best practices every week."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  } ]
+}, {
+  "id" : "5164fdcd-0d96-eaff-e01a-70f3240114da",
+  "name" : "edit_mega_menu_3",
+  "display_width" : null,
+  "label" : "Edit Mega Menu 3",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "fb4f3ca3-fdac-efbc-b431-50e029da72ef",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Blog"
+  }, {
+    "id" : "39af21bf-5bfa-9b81-810c-27727b3e7c95",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get new and unique perspectives on HR tech and best practices every week."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  }, {
+    "text_field" : "Blog",
+    "edit_content" : "Get new and unique perspectives on HR tech and best practices every week."
+  } ]
+}, {
+  "id" : "ac87c1f9-8848-45de-d250-b66111a23b54",
+  "name" : "edit_reporting_analytics",
+  "display_width" : null,
+  "label" : "Edit Reporting Analytics",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a58e58ca-8003-c593-d815-608bd5cfd757",
+    "name" : "edit_reporting",
+    "display_width" : null,
+    "label" : "Edit Reporting",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<h3>Reporting Analytics</h3>"
+  }, {
+    "id" : "626fc693-f4fd-c8a7-5bba-f11ae16ed07c",
+    "name" : "link_field_1",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_reporting" : "<h3>Reporting Analytics</h3>",
+    "link_field_1" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "0545f7f0-44c4-0250-3b8d-ad9378d5be3b",
+  "name" : "edit_language_switcher_",
+  "display_width" : null,
+  "label" : "Edit Language Switcher ",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "62d823b0-858e-b122-21c3-e8e0c73274a9",
+    "name" : "main_navigation_group",
+    "display_width" : null,
+    "label" : "Main Navigation Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4893aa99-2e6c-6dfc-18e4-1a85196b8c57",
+      "name" : "edit_flag_image",
+      "display_width" : null,
+      "label" : "Edit Flag Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/United-Kingdom_GB%20(1)%20(1).png",
+        "alt" : "United-Kingdom_GB (1) (1)",
+        "loading" : "lazy",
+        "width" : 18,
+        "height" : 14,
+        "max_width" : 18,
+        "max_height" : 14
+      }
+    }, {
+      "id" : "0951c7f3-730f-9f2c-b7c9-2a71a9a72506",
+      "name" : "language_text",
+      "display_width" : null,
+      "label" : "Language Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "En"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_flag_image" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/United-Kingdom_GB%20(1)%20(1).png",
+        "alt" : "United-Kingdom_GB (1) (1)",
+        "loading" : "lazy",
+        "width" : 18,
+        "height" : 14,
+        "max_width" : 18,
+        "max_height" : 14
+      },
+      "language_text" : "En"
+    }
+  }, {
+    "id" : "1bacdd9b-b6bf-40d2-41d9-299d4e6c4b65",
+    "name" : "language_drop_down",
+    "display_width" : null,
+    "label" : "Language Drop Down",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "091f6cfd-f150-2079-3deb-41329625383b",
+      "name" : "edit_language",
+      "display_width" : null,
+      "label" : "Edit Language",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "PL"
+    }, {
+      "id" : "b6e81402-a0df-a088-cc0d-cd3077d69c2a",
+      "name" : "edit_link",
+      "display_width" : null,
+      "label" : "Edit Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "main_navigation_group" : {
+      "edit_flag_image" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/United-Kingdom_GB%20(1)%20(1).png",
+        "alt" : "United-Kingdom_GB (1) (1)",
+        "loading" : "lazy",
+        "width" : 18,
+        "height" : 14,
+        "max_width" : 18,
+        "max_height" : 14
+      },
+      "language_text" : "En"
+    },
+    "language_drop_down" : [ {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "edit_language" : "PL",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+}, {
+  "id" : "b0dd8e87-d38a-3ae8-f2d4-9cba396e9edd",
+  "name" : "edit_mobile_button_",
+  "display_width" : null,
+  "label" : "Edit Mobile Button ",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3932b29d-af9b-dbe7-8d2f-23f12e818332",
+    "name" : "edit_button_one",
+    "display_width" : null,
+    "label" : "Edit Button One",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a69e507d-edf4-ecbe-d197-c5a4807933c4",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Вход"
+    }, {
+      "id" : "9f846f16-6956-f7dc-547b-af12c15369ea",
+      "name" : "link_field_2",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "button_text" : "Вход",
+      "link_field_2" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "08de8187-5631-77a2-ee8e-daa7c3d0f176",
+    "name" : "edit_button_two",
+    "display_width" : null,
+    "label" : "Edit Button Two",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8d649e3a-6506-f931-ee38-fcbcb352f89f",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Request free demo"
+    }, {
+      "id" : "e2f80ef6-5c36-7e5e-2491-337261e58619",
+      "name" : "link_field_2",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "button_text" : "Request free demo",
+      "link_field_2" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_button_one" : {
+      "button_text" : "Вход",
+      "link_field_2" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "edit_button_two" : {
+      "button_text" : "Request free demo",
+      "link_field_2" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

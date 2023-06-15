@@ -1,0 +1,200 @@
+[ {
+  "id" : "9648e2a1-f160-f32f-d464-3b448c78883a",
+  "name" : "edit_left_section",
+  "display_width" : null,
+  "label" : "Edit Left Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "10ee2f31-4f65-d1d6-d260-c1ac036dd9a1",
+    "name" : "edit_banner_content",
+    "display_width" : null,
+    "label" : "Edit Banner Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Автоматизируйте HR и переходите на</h4>\n<h1>Новый уровень эффективности бизнеса</h1>\n<p>Забудьте о рутине и сфокусируйтесь на важных целях <br>вашей компании</p>"
+  }, {
+    "id" : "c6838071-495d-f0d7-d7eb-8d0dd3c510f3",
+    "name" : "edit_rating_image",
+    "display_width" : null,
+    "label" : "Edit Rating Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Star%20ratings%20(1).png",
+      "alt" : "Star ratings (1)",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 149,
+      "max_width" : 472,
+      "max_height" : 149
+    }
+  }, {
+    "id" : "f87e6965-b385-cef2-6d9e-8096d9fac7b3",
+    "name" : "edit_banner_content_listing",
+    "display_width" : null,
+    "label" : "Edit Banner Content Listing",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "9cd022cb-9869-9700-c902-964283199d99",
+      "name" : "edit_number_text",
+      "display_width" : null,
+      "label" : "Edit Number Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "+35%"
+    }, {
+      "id" : "6f4189f1-6c26-0a92-a845-865bd5c917fe",
+      "name" : "edit_content",
+      "display_width" : null,
+      "label" : "Edit Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "education of manual Hr tasks"
+    }, {
+      "id" : "26c372a0-877d-8619-2a81-77f93c736591",
+      "name" : "edit_button_content",
+      "display_width" : null,
+      "label" : "Edit Button Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "* 1-2 hours per month per employee"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    }, {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    }, {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_banner_content" : "<h4>Автоматизируйте HR и переходите на</h4>\n<h1>Новый уровень эффективности бизнеса</h1>\n<p>Забудьте о рутине и сфокусируйтесь на важных целях <br>вашей компании</p>",
+    "edit_rating_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Star%20ratings%20(1).png",
+      "alt" : "Star ratings (1)",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 149,
+      "max_width" : 472,
+      "max_height" : 149
+    },
+    "edit_banner_content_listing" : [ {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    }, {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    }, {
+      "edit_number_text" : "+35%",
+      "edit_content" : "education of manual Hr tasks",
+      "edit_button_content" : "* 1-2 hours per month per employee"
+    } ]
+  }
+}, {
+  "id" : "0bfbddac-d476-093f-b6e8-26553b1bd05f",
+  "name" : "edit_right_section",
+  "display_width" : null,
+  "label" : "Edit Right Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b7e43434-170f-261b-55f8-f315966b39c6",
+    "name" : "edit_form_heading",
+    "display_width" : null,
+    "label" : "Edit Form Heading",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>14 дней PeopleForce бесплатно</h3>\n<p>Заполните форму — и наши менеджеры свяжутся с вами</p>"
+  }, {
+    "id" : "1f24812f-f207-bd94-a268-167a0bdf907d",
+    "name" : "edit_form",
+    "display_width" : null,
+    "label" : "Edit Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "7b7bd1ef-1d33-42d6-bab8-f605f4cbd3fb",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_form_heading" : "<h3>14 дней PeopleForce бесплатно</h3>\n<p>Заполните форму — и наши менеджеры свяжутся с вами</p>",
+    "edit_form" : {
+      "form_id" : "7b7bd1ef-1d33-42d6-bab8-f605f4cbd3fb",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+}, {
+  "id" : "2992d33d-28d5-4e71-af22-4cb879ae8bfd",
+  "name" : "edit_banner_image",
+  "display_width" : null,
+  "label" : "Edit Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bg.png",
+    "alt" : "bg",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 886,
+    "max_width" : 1440,
+    "max_height" : 886
+  }
+} ]

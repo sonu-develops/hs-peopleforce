@@ -1,0 +1,241 @@
+<div class="frm-cont">
+	<div class="container">
+		<div class="frm-contm d-flex">
+			<div class="col-6 align-center frm-padding">
+				<div class="frm-cpt">
+					
+					<div class="frm-cpt-mp two-content">
+						{{ module.edit_content_tpss.edit_content }}
+					</div>
+					<div class="frm-logo-c d-flex">
+						<div class="frm-lg-left">
+							 
+							<!-- section start -->
+							<div class="integrat-main">
+								<ul>
+									<li>
+										{% if module.edit_image_group.image_1.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_image_group.image_1.width }}" height="{{ module.edit_image_group.image_1.height }}"' %}
+											{% if module.edit_image_group.image_1.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_1.width }}" height="{{ module.edit_image_group.image_1.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_image_group.image_1.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_1.max_width }}" height="{{ module.edit_image_group.image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_image_group.image_1.loading != 'disabled' ? 'loading="{{ module.edit_image_group.image_1.loading }}"' : '' %}
+											<img src="{{ module.edit_image_group.image_1.src }}" alt="{{ module.edit_image_group.image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}
+									</li>
+									<li>
+										
+										{% if module.edit_image_group.image_2.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_image_group.image_2.width }}" height="{{ module.edit_image_group.image_2.height }}"' %}
+											{% if module.edit_image_group.image_2.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_2.width }}" height="{{ module.edit_image_group.image_2.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_image_group.image_2.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_2.max_width }}" height="{{ module.edit_image_group.image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_image_group.image_2.loading != 'disabled' ? 'loading="{{ module.edit_image_group.image_2.loading }}"' : '' %}
+											<img src="{{ module.edit_image_group.image_2.src }}" alt="{{ module.edit_image_group.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}
+									</li>
+									<li>
+										
+										{% if module.edit_image_group.image_3.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_image_group.image_3.width }}" height="{{ module.edit_image_group.image_3.height }}"' %}
+											{% if module.edit_image_group.image_3.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_3.width }}" height="{{ module.edit_image_group.image_3.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_image_group.image_3.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_3.max_width }}" height="{{ module.edit_image_group.image_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_image_group.image_3.loading != 'disabled' ? 'loading="{{ module.edit_image_group.image_3.loading }}"' : '' %}
+											<img src="{{ module.edit_image_group.image_3.src }}" alt="{{ module.edit_image_group.image_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}
+									</li>
+									<li>
+										{% if module.edit_image_group.image_4.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_image_group.image_4.width }}" height="{{ module.edit_image_group.image_4.height }}"' %}
+											{% if module.edit_image_group.image_4.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_4.width }}" height="{{ module.edit_image_group.image_4.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_image_group.image_4.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_image_group.image_4.max_width }}" height="{{ module.edit_image_group.image_4.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_image_group.image_4.loading != 'disabled' ? 'loading="{{ module.edit_image_group.image_4.loading }}"' : '' %}
+											<img src="{{ module.edit_image_group.image_4.src }}" alt="{{ module.edit_image_group.image_4.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}
+									</li>
+									
+								</ul>
+							</div>
+							<!-- End -->
+						</div>
+						<div class="frm-lg-right align-center">
+							<p>{{ module.edit_content_tpss.logo_content_section.edit_contentsd }}</p>
+						</div>
+						
+					</div>
+					<!--       bacdge section     -->
+					{% if module.hide_badge_section %}
+						
+						<div class="content-badge">
+							
+							<div class="bdg-main d-flex">
+								<div class="badge-left align-center">
+									<div class="badge-tpts">
+										<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/badge%201.png?width=90&amp;height=81&amp;name=badge%201.png" alt="badge 1" loading="lazy" width="90" height="81" style="max-width: 100%; height: auto;">
+									</div>
+								</div>
+								<div class="badge-right">
+									<div class="badge-gpt">
+										<p>
+											</p><p>"I have used Trello, Jira and Asana... monday.com is the best tool so far."</p>
+											<p></p>
+											<div class="star-sec d-flex">
+												<div class="str-left">
+													4.5
+												</div>
+												<div class="str-right">
+													<ul>
+														<li>
+															<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/bi_star-fill.png?width=17&amp;height=17&amp;name=bi_star-fill.png" alt="bi_star-fill" loading="lazy" width="17" height="17" style="max-width: 100%; height: auto;">
+															
+														</li>
+														<li>
+															<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/bi_star-fill.png?width=17&amp;height=17&amp;name=bi_star-fill.png" alt="bi_star-fill" loading="lazy" width="17" height="17" style="max-width: 100%; height: auto;">
+															
+														</li>
+														
+														<li>
+															<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/bi_star-fill.png?width=17&amp;height=17&amp;name=bi_star-fill.png" alt="bi_star-fill" loading="lazy" width="17" height="17" style="max-width: 100%; height: auto;">
+															
+														</li>
+														
+														<li>
+															<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/bi_star-fill.png?width=17&amp;height=17&amp;name=bi_star-fill.png" alt="bi_star-fill" loading="lazy" width="17" height="17" style="max-width: 100%; height: auto;">
+															
+														</li>
+														
+														<li>
+															<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/bi_star-fill.png?width=17&amp;height=17&amp;name=bi_star-fill.png" alt="bi_star-fill" loading="lazy" width="17" height="17" style="max-width: 100%; height: auto;">
+															
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="str-btm">
+												<b>Victor M</b> | Data Science Specialist
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						{% endif %}
+						<!--    end        -->
+						
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="frm-from white-bg-style">
+						<div class="sec-formt">
+							<div class="heading-gt">
+								{{ module.edit_right_content.edit_heading_ }}
+							</div>
+							<!-- list content -->
+							<div class="form-tmt">
+								
+								<ul>
+									
+									<li>
+										30-Days Free Trial
+									</li>
+									
+									<li>
+										No hidden fees
+									</li>
+									
+									<li>
+										No credit card
+									</li>
+									
+								</ul>
+								
+							</div>
+							<!-- end -->
+							<!-- label -->
+							<div class="label-style">
+								<div class="d-flex lb-gp-center">
+									<div class="left-lb align-center">
+										Наши менеджеры свяжутся с вами
+									</div>
+									<div class="right-lb">
+										
+										
+										<div class="sales-person">
+											<ul>
+												<li>
+													
+													
+													{% if module.edit_right_content.edit_sales_person.image_1.src %}
+														{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_1.width }}" height="{{ module.edit_right_content.edit_sales_person.image_1.height }}"' %}
+														{% if module.edit_right_content.edit_sales_person.image_1.size_type == 'auto' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_1.width }}" height="{{ module.edit_right_content.edit_sales_person.image_1.height }}" style="max-width: 100%; height: auto;"' %}
+															{% elif module.edit_right_content.edit_sales_person.image_1.size_type == 'auto_custom_max' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_1.max_width }}" height="{{ module.edit_right_content.edit_sales_person.image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+														{% endif %}
+														{% set loadingAttr = module.edit_right_content.edit_sales_person.image_1.loading != 'disabled' ? 'loading="{{ module.edit_right_content.edit_sales_person.image_1.loading }}"' : '' %}
+														<img src="{{ module.edit_right_content.edit_sales_person.image_1.src }}" alt="{{ module.edit_right_content.edit_sales_person.image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+													{% endif %}
+												</li>
+												<li>
+													
+													
+													{% if module.edit_right_content.edit_sales_person.image_2.src %}
+														{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_2.width }}" height="{{ module.edit_right_content.edit_sales_person.image_2.height }}"' %}
+														{% if module.edit_right_content.edit_sales_person.image_2.size_type == 'auto' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_2.width }}" height="{{ module.edit_right_content.edit_sales_person.image_2.height }}" style="max-width: 100%; height: auto;"' %}
+															{% elif module.edit_right_content.edit_sales_person.image_2.size_type == 'auto_custom_max' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_2.max_width }}" height="{{ module.edit_right_content.edit_sales_person.image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+														{% endif %}
+														{% set loadingAttr = module.edit_right_content.edit_sales_person.image_2.loading != 'disabled' ? 'loading="{{ module.edit_right_content.edit_sales_person.image_2.loading }}"' : '' %}
+														<img src="{{ module.edit_right_content.edit_sales_person.image_2.src }}" alt="{{ module.edit_right_content.edit_sales_person.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+													{% endif %}
+												</li>
+												<li>
+													
+													{% if module.edit_right_content.edit_sales_person.image_3.src %}
+														{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_3.width }}" height="{{ module.edit_right_content.edit_sales_person.image_3.height }}"' %}
+														{% if module.edit_right_content.edit_sales_person.image_3.size_type == 'auto' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_3.width }}" height="{{ module.edit_right_content.edit_sales_person.image_3.height }}" style="max-width: 100%; height: auto;"' %}
+															{% elif module.edit_right_content.edit_sales_person.image_3.size_type == 'auto_custom_max' %}
+															{% set sizeAttrs = 'width="{{ module.edit_right_content.edit_sales_person.image_3.max_width }}" height="{{ module.edit_right_content.edit_sales_person.image_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+														{% endif %}
+														{% set loadingAttr = module.edit_right_content.edit_sales_person.image_3.loading != 'disabled' ? 'loading="{{ module.edit_right_content.edit_sales_person.image_3.loading }}"' : '' %}
+														<img src="{{ module.edit_right_content.edit_sales_person.image_3.src }}" alt="{{ module.edit_right_content.edit_sales_person.image_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+													{% endif %}
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end -->
+							
+							<div class="sect-form form-main">
+								
+								{% form
+									form_to_use="{{ module.edit_right_content.form_field.form_id }}"
+									response_response_type="{{ module.edit_right_content.form_field.response_type }}"
+									response_message="{{ module.edit_right_content.form_field.message }}"
+									response_redirect_id="{{ module.edit_right_content.form_field.redirect_id }}"
+									response_redirect_url="{{module.edit_right_content.form_field.redirect_url}}"
+									gotowebinar_webinar_key="{{ module.edit_right_content.form_field.gotowebinar_webinar_key }}"
+									%}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

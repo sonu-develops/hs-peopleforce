@@ -1,0 +1,42 @@
+<div class="lb-sec">
+	<div class="container">
+		<div class="lb-main">
+			
+			<div class="lb-gpt d-flex">
+				<div class="lb-left align-center">
+          	<div class="lb-ltg">
+					<div class="lb-leftt-inner">
+						{{ module.edit_left_group.edit_content }}
+					</div>
+					<div class="lbs-btn">
+						{% set href = module.edit_left_group.edit_button.edit_button.url.href %}
+						{% if module.edit_left_group.edit_button.edit_button.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a class="btn btn btn-primary w-full w-lg-auto open-popup-link" href="{{ href }}"
+							{% if module.edit_left_group.edit_button.edit_button.open_in_new_tab %}target="_blank"{% endif %}
+							{% if module.edit_left_group.edit_button.edit_button.rel %}rel="{{ module.edit_left_group.edit_button.edit_button.rel }}"{% endif %}
+							>
+							{{ module.edit_left_group.edit_button.edit_button_text }}
+						</a>
+					</div>
+          </div>
+				</div>
+				<div class="lb-right"> 
+					<div class="lb-img">
+						{% if module.edit_image.src %}
+							{% set sizeAttrs = 'width="{{ module.edit_image.width }}" height="{{ module.edit_image.height }}"' %}
+							{% if module.edit_image.size_type == 'auto' %}
+								{% set sizeAttrs = 'width="{{ module.edit_image.width }}" height="{{ module.edit_image.height }}" style="max-width: 100%; height: auto;"' %}
+								{% elif module.edit_image.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ module.edit_image.max_width }}" height="{{ module.edit_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = module.edit_image.loading != 'disabled' ? 'loading="{{ module.edit_image.loading }}"' : '' %}
+							<img src="{{ module.edit_image.src }}" alt="{{ module.edit_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

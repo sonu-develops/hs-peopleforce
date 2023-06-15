@@ -1,0 +1,123 @@
+<div class="ingr">
+	<div class="container">
+		<div class="ingr-main d-flex">
+			<div class="ingr-left col-6">
+				<div class="ingr-content">
+					<div class="ingr-content-fl">
+						{{ module.edit_left_group.edit_heading_content }}
+					</div>
+					<div class="ingr-btn">
+						{% set href = module.edit_left_group.edit_button_group.edit_button_link.url.href %}
+						{% if module.edit_left_group.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a class=" btn" href="{{ href }}"
+							{% if module.edit_left_group.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+							{% if module.edit_left_group.edit_button_group.edit_button_link.rel %}rel="{{ module.edit_left_group.edit_button_group.edit_button_link.rel }}"{% endif %}
+							>
+							{{ module.edit_left_group.edit_button_group.edit_button_text }}
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="ingr-right col-6 align-center">
+				<div class="inter-cp">
+					<div class="inter-content">
+						
+						<!-- integration module start -->
+						<div class="integrat-main">
+							
+							<ul>
+								
+								<li>
+									{% if module.edit_icons_group.edit_icon_1.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_1.width }}" height="{{ module.edit_icons_group.edit_icon_1.height }}"' %}
+										{% if module.edit_icons_group.edit_icon_1.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_1.width }}" height="{{ module.edit_icons_group.edit_icon_1.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_icons_group.edit_icon_1.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_1.max_width }}" height="{{ module.edit_icons_group.edit_icon_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_icons_group.edit_icon_1.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_1.loading }}"' : '' %}
+										<img src="{{ module.edit_icons_group.edit_icon_1.src }}" alt="{{ module.edit_icons_group.edit_icon_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</li>
+								<li>{% if module.edit_icons_group.edit_icon_2.src %}
+									{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_2.width }}" height="{{ module.edit_icons_group.edit_icon_2.height }}"' %}
+									{% if module.edit_icons_group.edit_icon_2.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_2.width }}" height="{{ module.edit_icons_group.edit_icon_2.height }}" style="max-width: 100%; height: auto;"' %}
+										{% elif module.edit_icons_group.edit_icon_2.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_2.max_width }}" height="{{ module.edit_icons_group.edit_icon_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.edit_icons_group.edit_icon_2.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_2.loading }}"' : '' %}
+									<img src="{{ module.edit_icons_group.edit_icon_2.src }}" alt="{{ module.edit_icons_group.edit_icon_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}</li>
+								<li>
+									
+									{% if module.edit_icons_group.edit_icon_3.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_3.width }}" height="{{ module.edit_icons_group.edit_icon_3.height }}"' %}
+										{% if module.edit_icons_group.edit_icon_3.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_3.width }}" height="{{ module.edit_icons_group.edit_icon_3.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_icons_group.edit_icon_3.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_3.max_width }}" height="{{ module.edit_icons_group.edit_icon_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_icons_group.edit_icon_3.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_3.loading }}"' : '' %}
+										<img src="{{ module.edit_icons_group.edit_icon_3.src }}" alt="{{ module.edit_icons_group.edit_icon_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</li>
+								<li>
+									{% if module.edit_icons_group.edit_icon_4.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_4.width }}" height="{{ module.edit_icons_group.edit_icon_4.height }}"' %}
+										{% if module.edit_icons_group.edit_icon_4.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_4.width }}" height="{{ module.edit_icons_group.edit_icon_4.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_icons_group.edit_icon_4.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_4.max_width }}" height="{{ module.edit_icons_group.edit_icon_4.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_icons_group.edit_icon_4.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_4.loading }}"' : '' %}
+										<img src="{{ module.edit_icons_group.edit_icon_4.src }}" alt="{{ module.edit_icons_group.edit_icon_4.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</li>
+								<li>
+									{% if module.edit_icons_group.edit_icon_5.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_5.width }}" height="{{ module.edit_icons_group.edit_icon_5.height }}"' %}
+										{% if module.edit_icons_group.edit_icon_5.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_5.width }}" height="{{ module.edit_icons_group.edit_icon_5.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_icons_group.edit_icon_5.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_5.max_width }}" height="{{ module.edit_icons_group.edit_icon_5.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_icons_group.edit_icon_5.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_5.loading }}"' : '' %}
+										<img src="{{ module.edit_icons_group.edit_icon_5.src }}" alt="{{ module.edit_icons_group.edit_icon_5.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</li>
+								<li>
+									{% if module.edit_icons_group.edit_icon_6.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_6.width }}" height="{{ module.edit_icons_group.edit_icon_6.height }}"' %}
+										{% if module.edit_icons_group.edit_icon_6.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_6.width }}" height="{{ module.edit_icons_group.edit_icon_6.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_icons_group.edit_icon_6.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_icons_group.edit_icon_6.max_width }}" height="{{ module.edit_icons_group.edit_icon_6.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_icons_group.edit_icon_6.loading != 'disabled' ? 'loading="{{ module.edit_icons_group.edit_icon_6.loading }}"' : '' %}
+										<img src="{{ module.edit_icons_group.edit_icon_6.src }}" alt="{{ module.edit_icons_group.edit_icon_6.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</li>
+							</ul>
+						</div>
+						<!-- End -->
+					</div>
+					<div class="inter-ltm">
+						{% set href = module.edit_right_section.edit_text_group.link_field.url.href %}
+						{% if module.edit_right_section.edit_text_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a href="{{ href }}"
+							{% if module.edit_right_section.edit_text_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+							{% if module.edit_right_section.edit_text_group.link_field.rel %}rel="{{ module.edit_right_section.edit_text_group.link_field.rel }}"{% endif %}
+							>
+							{{ module.edit_right_section.edit_text_group.edit_content }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

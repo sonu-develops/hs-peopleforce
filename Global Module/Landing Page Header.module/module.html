@@ -1,0 +1,255 @@
+<div class="lp-header">
+	<div class="container">
+		<div class="lp-head d-flex">
+			<div class="lp-left col-6">
+				<div class="lp-logo">
+					{% set loadingAttr = module.logo_field.loading != 'disabled' ? '{{ module.logo_field.loading }}' : '' %}
+					{% logo
+					override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+					src="{{ module.logo_field.src }}"
+					alt="{{ module.logo_field.alt }}"
+					width="{{ module.logo_field.width }}"
+					height="{{ module.logo_field.height }}"
+					loading="{{ loadingAttr }}"
+					suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+					%}
+				</div>
+			</div>
+			<div class="lp-right col-6">
+				<div class="lg-main d-flex">
+					<div class="lg-rpt">
+						{% if module.edit_flag_section.edit_flag_image.src %}
+							{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag_image.width }}" height="{{ module.edit_flag_section.edit_flag_image.height }}"' %}
+							{% if module.edit_flag_section.edit_flag_image.size_type == 'auto' %}
+								{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag_image.width }}" height="{{ module.edit_flag_section.edit_flag_image.height }}" style="max-width: 100%; height: auto;"' %}
+								{% elif module.edit_flag_section.edit_flag_image.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag_image.max_width }}" height="{{ module.edit_flag_section.edit_flag_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = module.edit_flag_section.edit_flag_image.loading != 'disabled' ? 'loading="{{ module.edit_flag_section.edit_flag_image.loading }}"' : '' %}
+							<img src="{{ module.edit_flag_section.edit_flag_image.src }}" alt="{{ module.edit_flag_section.edit_flag_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+					<div class="lp-tran">
+						{% set href = module.edit_flag_section.edit_language_button_.edit_link.url.href %}
+						{% if module.edit_flag_section.edit_language_button_.edit_link.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a href="{{ href }}"
+							{% if module.edit_flag_section.edit_language_button_.edit_link.open_in_new_tab %}target="_blank"{% endif %}
+							{% if module.edit_flag_section.edit_language_button_.edit_link.rel %}rel="{{ module.edit_flag_section.edit_language_button_.edit_link.rel }}"{% endif %}
+							>
+							{{ module.edit_flag_section.edit_language_button_.edit_page_name }}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- popup section content -->
+<div id="test-popup" class="white-popup mfp-hide">
+	<div class="pop-section">
+		<div class="pop-sec d-flex">
+			<div class="pop-left col-6 align-center">
+				
+				<div class="pop-contenrt">
+					<div class="content-heading">
+						<div class="cnt-heading">
+							<h4>Автоматизируйте HR и переходите на</h4>
+							<h1>Новый уровень эффективности бизнеса</h1>
+							<p>Забудьте о рутине и сфокусируйтесь на важных целях вашей компании</p>
+						</div>
+						
+					</div>
+					<div class="content-img">
+						<div class="img-listing">
+							<div class="wd-section-d">
+								
+								<div class="wd-section-inner">
+									<div class="wd-sec-style">
+										<div class="wid-icon">
+											<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/image_3__2_-removebg-preview.png?width=32&amp;height=32&amp;name=image_3__2_-removebg-preview.png" alt="image_3__2_-removebg-preview" loading="lazy" width="32" height="32" style="max-width: 100%; height: auto;">
+											
+										</div>
+										<div class="text-gpt">
+											<p>Capterra</p>
+										</div>
+										<div class="wid-star">
+											<ul>
+												
+												<li>
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+											</ul>
+										</div>
+										<div class="botm-content">
+											<p>4.6 star rating</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="wd-section-inner">
+									<div class="wd-sec-style">
+										<div class="wid-icon"> 
+											<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/image%204.png?width=32&amp;height=33&amp;name=image%204.png" alt="image 4" loading="lazy" width="32" height="33" style="max-width: 100%; height: auto;"> 
+										</div>
+										<div class="text-gpt">
+											<p>Source Force</p>
+										</div>
+										<div class="wid-star">
+											<ul>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li>        
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;">  
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+											</ul>
+										</div>
+										<div class="botm-content">
+											<p>4.9 star rating</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="wd-section-inner">
+									<div class="wd-sec-style">
+										<div class="wid-icon"> 
+											<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/image_5__2_-removebg-preview.png?width=40&amp;height=41&amp;name=image_5__2_-removebg-preview.png" alt="image_5__2_-removebg-preview" loading="lazy" width="40" height="41" style="max-width: 100%; height: auto;">
+											
+										</div>
+										<div class="text-gpt">
+											<p>GetApp</p>
+										</div>
+										<div class="wid-star">
+											<ul>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;"> 
+												</li>
+												
+												<li> 
+													<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg" alt="Shape" loading="lazy" width="14" height="13" style="max-width: 100%; height: auto;">  
+												</li>
+												
+											</ul>
+										</div>
+										<div class="botm-content">
+											<p>4.6 star rating</p>
+										</div>
+									</div>
+								</div> 
+							</div> 
+						</div> 
+					</div> 
+					<div class="content-badge">
+						<!-- section start -->
+						<!-- End -->
+					</div>
+				</div>
+			</div>
+			<div class="pop-right col-6">
+				<div class="popup-form form-main">
+					<div class="pop-head">
+						<div class="form-hd">
+							<h3>Оставьте заявку на демо</h3>
+						</div>
+						<div class="form-tmt">
+							<ul>
+								
+								<li>
+									30-Days Free Trial
+								</li>
+								
+								<li>
+									No hidden fees
+								</li>
+								
+								<li>
+									No credit card
+								</li>
+								
+							</ul>
+						</div>
+						<div class="label-style">
+							<div class="d-flex lb-gp-center">
+								<div class="left-lb align-center">
+									Наши менеджеры свяжутся с вами
+								</div>
+								<div class="right-lb"> 
+									<div class="sales-person">
+										<ul>
+											<li>
+												<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/Rectangle%20124279.png?width=42&amp;height=42&amp;name=Rectangle%20124279.png" alt="Rectangle 124279" loading="lazy" width="42" height="42" style="max-width: 100%; height: auto;">
+											</li>
+											<li> 
+												<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/Rectangle%20124279%20(1).png?width=50&amp;height=50&amp;name=Rectangle%20124279%20(1).png" alt="Rectangle 124279 (1)" loading="lazy" width="50" height="50" style="max-width: 100%; height: auto;">
+											</li>
+											<li>
+												<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/Rectangle%20124279%20(2).png?width=42&amp;height=42&amp;name=Rectangle%20124279%20(2).png" alt="Rectangle 124279 (2)" loading="lazy" width="42" height="42" style="max-width: 100%; height: auto;">
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% form
+						form_to_use="{{ module.form_field.form_id }}"
+						response_response_type="{{ module.form_field.response_type }}"
+						response_message="{{ module.form_field.message }}"
+						response_redirect_id="{{ module.form_field.redirect_id }}"
+						response_redirect_url="{{module.form_field.redirect_url}}"
+						gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+						%}
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- end -->

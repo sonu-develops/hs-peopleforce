@@ -1,0 +1,395 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page Version 1
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+         'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '10' }      
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } 
+       %}
+        {% dnd_row %}
+          {% dnd_column  padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       }  %} 
+
+             {% dnd_row %}
+                {% dnd_module path="../modules/Banner Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End --------------------> 
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ max_width=1240,
+ padding={
+          'default': { 'top': '80', 'bottom': '80', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '10', 'left': '10' }       
+       },
+       background_color={
+            r: 246,
+            g: 249,
+            b: 251,
+            a: 1
+          }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+
+              {% dnd_row %}
+              {% dnd_module path="@hubspot/rich_text",label="Heading And Description Text" %}
+                {% module_attribute "html" %} 
+
+<div style="text-align:left;">
+    <h2>Effective & Flexible Pricing That Adapts Your Needs</h2>
+   <p>We are supporting +60 000 employees from small and large companies</p>
+</div>
+
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+             {% end_dnd_row %} 
+ {% dnd_row %}
+                {% dnd_module path="../modules/Logo Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End --------------------> 
+
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+         'mobile': { 'top':'0', 'bottom': 0, 'right': '10', 'left': '10' }      
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Content and Image Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '0', 'bottom': '100', 'right': '0', 'left': '0' },
+        'mobile': { 'top':'0', 'bottom': 0, 'right': '10', 'left': '10' }        
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Content and Image Module.module", change_direction="two-col-fl" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+        'mobile': { 'top':'0', 'bottom': 0, 'right': '10', 'left': '10' }       
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Content and Image Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+         'mobile': { 'top':'0', 'bottom': 0, 'right': '10', 'left': '10' }       
+       },
+        background_color={
+            r: 246,
+            g: 249,
+            b: 251,
+            a: 1
+          }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Integration Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       },
+        background_color={
+            r: 255,
+            g: 255,
+            b: 255,
+            a: 1
+          }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Card Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+ 
+<!--------------- Section Start ------ ----->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '80', 'bottom': '60', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       },
+ background_color={
+            r: 246,
+            g: 249,
+            b: 251,
+            a: 1
+          }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Form and Content Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+
+<!--------------- Section Start ------ ----->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Icons Card Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+
+
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ max_width=1240,
+ padding={
+          'default': { 'top': '100', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+
+              {% dnd_row %}
+              {% dnd_module path="@hubspot/rich_text",label="Heading And Description Text" %}
+                {% module_attribute "html" %} 
+
+<div style="text-align:center;">
+    <h2>PeopleHR - Ваш путь к эффективным сотрудникам</h2>
+   
+</div>
+
+                {% end_module_attribute %}
+              {% end_dnd_module %}
+             {% end_dnd_row %} 
+
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '50', 'bottom': '60', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Content and Image Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '0', 'bottom': '100', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Content and Image Module.module", change_direction="two-col-fl" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+<!-------------------- Section Start ---------------->
+ {% dnd_section  
+ full_width=true,
+ padding={
+          'default': { 'top': '90', 'bottom': '100', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       },
+        background_color={
+            r: 246,
+            g: 249,
+            b: 251,
+            a: 1
+          }
+ %}
+    {% dnd_column 
+        padding={
+          'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+          'mobile': { 'top':'0', 'bottom': 0, 'right': '0', 'left': '0' }       
+       } %}
+        {% dnd_row %}
+          {% dnd_column %} 
+              {% dnd_row %}
+                {% dnd_module path="../modules/Testimonial Module.module" %}                
+               {% end_dnd_module %}
+              {% end_dnd_row %}
+            {% end_dnd_column %} 
+      {% end_dnd_row %}          
+    {% end_dnd_column %}
+  {% end_dnd_section %} 
+<!-------------------- End -------------------->
+
+{% end_dnd_area %}
+{% endblock body %}

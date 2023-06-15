@@ -1,0 +1,39 @@
+<!--
+templateType: global_partial
+label: Website header
+-->
+<header class="header-cp">
+	<div class="header-fixed" id="myHeader">
+		
+		
+		{% dnd_area 'header-top' label='Top header' class='header content-wrapper' %}
+		
+		<!-- Section Start-->
+		{% dnd_section
+		
+		max_width=1240,
+		vertical_alignment='MIDDLE'
+		%}
+		{% dnd_column
+		padding={
+		'default': { 'top': '0', 'bottom': '0', 'right': '0', 'left': '0' },
+		'mobile': { 'top':'40', 'bottom': 0, 'right': '0', 'left': '0' }
+		}
+		%}
+		
+		{% dnd_row %}
+		{% dnd_module path="../../Global Module/Landing Page Header.module" %}
+	{% end_dnd_module %}
+{% end_dnd_row %}
+
+{% end_dnd_column %}
+
+{% end_dnd_section %}
+<!-- Section end-->
+
+{% end_dnd_area %}
+{# End top header drag and drop area #}
+
+</div>
+
+</header>

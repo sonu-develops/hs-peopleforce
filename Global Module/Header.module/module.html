@@ -1,0 +1,285 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0 py-lg-0 ">
+	<div class="container max-w-screen-xl">
+		{% set href = module.edit_logo_group.edit_linking.url.href %}
+		{% if module.edit_logo_group.edit_linking.url.type is equalto "EMAIL_ADDRESS" %}
+			{% set href = "mailto:" + href %}
+		{% endif %}
+		<a class="navbar-brand pb-0 pt-0" href="{{ href }}"
+			{% if module.edit_logo_group.edit_linking.open_in_new_tab %}target="_blank"{% endif %}
+			{% if module.edit_logo_group.edit_linking.rel %}rel="{{ module.edit_logo_group.edit_linking.rel }}"{% endif %}
+			>
+			{% if module.edit_logo_group.edit_logo.src %}
+				{% set sizeAttrs = 'width="{{ module.edit_logo_group.edit_logo.width }}" height="{{ module.edit_logo_group.edit_logo.height }}"' %}
+				{% if module.edit_logo_group.edit_logo.size_type == 'auto' %}
+					{% set sizeAttrs = 'width="{{ module.edit_logo_group.edit_logo.width }}" height="{{ module.edit_logo_group.edit_logo.height }}" style="max-width: 100%; height: auto;"' %}
+					{% elif module.edit_logo_group.edit_logo.size_type == 'auto_custom_max' %}
+					{% set sizeAttrs = 'width="{{ module.edit_logo_group.edit_logo.max_width }}" height="{{ module.edit_logo_group.edit_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+				{% endif %}
+				{% set loadingAttr = module.edit_logo_group.edit_logo.loading != 'disabled' ? 'loading="{{ module.edit_logo_group.edit_logo.loading }}"' : '' %}
+				<img src="{{ module.edit_logo_group.edit_logo.src }}" alt="{{ module.edit_logo_group.edit_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" ></span>
+		<span id="navbarCollapse" class="navbar-toggler-cross">
+		<img alt="PeopleForce logo" src="https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/close.png" loading="lazy"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav ms-lg-auto">
+				<li class="nav-item dropdown position-static">
+					{% set href = module.edit_main_navigation.products.link_field.url.href %}
+					{% if module.edit_main_navigation.products.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="nav-link py-lg-6 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="{{ href }}"
+						{% if module.edit_main_navigation.products.link_field.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_main_navigation.products.link_field.rel %}rel="{{ module.edit_main_navigation.products.link_field.rel }}"{% endif %}
+						>
+						{{ module.edit_main_navigation.products.products }}
+					</a>
+					<div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-fluid p-0 shadow-6" aria-labelledby="">
+						<div class="row g-0">
+							<div class="col-12 col-lg-12 ">
+								<div class="row p-4 p-md-8 g-8 g-lg-12">
+									
+									<!-- menu start -->
+									{% for item in module.edit_mega_menu_1 %}
+										<div class="col-md-4 pd-0-mb">
+											<div class="position-relative">
+												<div class="d-flex align-items-center mb-2 mb-2-mb">
+													<span class="dropdown-heading">
+														<a class="text-dark font-bold" href="/products/peoplehr">
+															{{ item.menu_heading }}
+															
+														</a>
+													</span>
+												</div>
+												<p class="text-muted mb-3 xsmall dp-none">
+													{{ item.edit_sub_content }}
+												</p>
+												<ul class="list-unstyled dp-none">
+													
+													<!-- list start -->
+													{% for item2 in item.edit_content_listing_ %}
+														<li>
+															{% set href = item2.edit_link.url.href %}
+															{% if item2.edit_link.url.type is equalto "EMAIL_ADDRESS" %}
+																{% set href = "mailto:" + href %}
+															{% endif %}
+															<a href="{{ href }}"
+																{% if item2.edit_link.open_in_new_tab %}target="_blank"{% endif %}
+																{% if item2.edit_link.rel %}rel="{{ item2.edit_link.rel }}"{% endif %}
+																>
+																{{ item2.edit_text_content }}
+															</a>
+														</li>
+													{% endfor %}
+													<!-- end -->
+												</ul>
+											</div>
+										</div>
+									{% endfor %}
+									<!-- menu end -->
+								</div>
+								<div class="px-4 py-2 px-md-8  rounded-bottom-3">
+									<div class="d-flex flex-wrap">
+										<div class="col-sm-6">
+											{% set href = module.edit_reporting_analytics.link_field_1.url.href %}
+											{% if module.edit_reporting_analytics.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+												{% set href = "mailto:" + href %}
+											{% endif %}
+											<a class="dropdown-group py-2" href="{{ href }}"
+												{% if module.edit_reporting_analytics.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+												{% if module.edit_reporting_analytics.link_field_1.rel %}rel="{{ module.edit_reporting_analytics.link_field_1.rel }}"{% endif %}
+												>
+												<span class="d-block dropdown-heading text-sm mb-0">
+													<h3>{{ module.edit_reporting_analytics.edit_reporting }}</h3>
+												</span>
+											</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item">
+					{% set href = module.edit_main_navigation.pricing.link_field.url.href %}
+					{% if module.edit_main_navigation.pricing.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="nav-link py-lg-6" href="{{ href }}"
+						{% if module.edit_main_navigation.pricing.link_field.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_main_navigation.pricing.link_field.rel %}rel="{{ module.edit_main_navigation.pricing.link_field.rel }}"{% endif %}
+						>
+						{{ module.edit_main_navigation.pricing.products }}
+					</a>
+				</li>
+				<li class="nav-item dropdown position-static">
+					<a class="nav-link py-lg-6 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+						Resources
+					</a>
+					<div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-fluid p-0 shadow-6 stop-shadow" aria-labelledby="">
+						<div class="px-6 pt-6 pb-1 Resources">
+							<div class="row">
+								<div class="col-md-6 pd-0-mb">
+									
+									<!-- mega menu 2 -->
+									{% for item in module.edit_mega_menu_2 %}
+										<a class="dropdown-group mb-5" href="/blog">
+											<div class="d-flex align-items-center">
+												<div class="">
+													<span class="d-block dropdown-heading mb-0 font-bold">{{ item.text_field }}</span>
+													<p class="dropdown-helper mb-0 xsmall">
+														{{ item.edit_content }}
+													</p>
+												</div>
+											</div>
+										</a>
+									{% endfor %}
+									<!-- end -->
+									
+									
+								</div>
+								<div class="col-md-6 pd-0-mb">
+									{% for item in module.edit_mega_menu_3 %}
+										<a class="dropdown-group mb-5" href="/events">
+											<div class="d-flex align-items-center">
+												<div class="">
+													<span class="d-block dropdown-heading mb-0 font-bold">{{ item.text_field }}</span>
+													<p class="dropdown-helper mb-0 xsmall">
+														{{ item.edit_content }}
+													</p>
+												</div>
+											</div>
+										</a>
+									{% endfor %}
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item align-end">
+					{% set href = module.edit_main_navigation.partners.link_field.url.href %}
+					{% if module.edit_main_navigation.partners.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="nav-link py-lg-6" role="button" data-bs-toggle="dropdown" href="{{ href }}"
+						{% if module.edit_main_navigation.partners.link_field.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_main_navigation.partners.link_field.rel %}rel="{{ module.edit_main_navigation.partners.link_field.rel }}"{% endif %}
+						>
+						{{ module.edit_main_navigation.partners.products }}
+					</a>
+					
+				</li>
+				<!-- start  -->
+				<li class="nav-item">
+					{% set href = module.edit_main_navigation.about.link_field.url.href %}
+					{% if module.edit_main_navigation.about.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="nav-link py-lg-6" href="{{ href }}"
+						{% if module.edit_main_navigation.about.link_field.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_main_navigation.about.link_field.rel %}rel="{{ module.edit_main_navigation.about.link_field.rel }}"{% endif %}
+						>
+						{{ module.edit_main_navigation.about.products }}
+					</a>
+				</li>
+				<!-- end -->
+				<!-- Menu lang section start -->
+				<li class="nav-item dropdown drop-lang">
+					<a class="nav-link py-lg-6"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						
+						<div class="lg-main d-flex">
+							<div class="lg-rpt">
+								{% if module.edit_language_switcher_.main_navigation_group.edit_flag_image.src %}
+									{% set sizeAttrs = 'width="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.width }}" height="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.height }}"' %}
+									{% if module.edit_language_switcher_.main_navigation_group.edit_flag_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.width }}" height="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.height }}" style="max-width: 100%; height: auto;"' %}
+										{% elif module.edit_language_switcher_.main_navigation_group.edit_flag_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.max_width }}" height="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.edit_language_switcher_.main_navigation_group.edit_flag_image.loading != 'disabled' ? 'loading="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.loading }}"' : '' %}
+									<img src="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.src }}" alt="{{ module.edit_language_switcher_.main_navigation_group.edit_flag_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</div>
+							<div class="lp-tran">
+								{{ module.edit_language_switcher_.main_navigation_group.language_text }}
+							</div>
+						</div>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end text-center" style="min-width: 5rem !important;">
+						{% for item in module.edit_language_switcher_.language_drop_down %}
+							<li>
+								{% set href = item.edit_link.url.href %}
+								{% if item.edit_link.url.type is equalto "EMAIL_ADDRESS" %}
+									{% set href = "mailto:" + href %}
+								{% endif %}
+								<a class="dropdown-item" href="{{ href }}"
+									{% if item.edit_link.open_in_new_tab %}target="_blank"{% endif %}
+									{% if item.edit_link.rel %}rel="{{ item.edit_link.rel }}"{% endif %}
+									>
+									{{ item.edit_language }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+				<!-- end -->
+			</ul>
+			<!--   Mobile version     -->
+			<div class="diff-lang">
+				<ul>
+					<!-- list start -->
+					{% for item in module.edit_language_switcher_.language_drop_down %}
+						<li>
+							{% set href = item.edit_link.url.href %}
+							{% if item.edit_link.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+							{% endif %}
+							<a href="{{ href }}"
+								{% if item.edit_link.open_in_new_tab %}target="_blank"{% endif %}
+								{% if item.edit_link.rel %}rel="{{ item.edit_link.rel }}"{% endif %}
+								>
+								{{ item.edit_language }}
+							</a>
+						</li>
+					{% endfor %}
+					<!-- end -->
+					
+				</ul>
+			</div>
+			<!--     end   -->
+			<!--mobile buttons -->
+			<div class="mbt-button">
+				<div class="mbt-one">
+					{% set href = module.edit_mobile_button_.edit_button_one.link_field_2.url.href %}
+					{% if module.edit_mobile_button_.edit_button_one.link_field_2.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a href="{{ href }}"
+						{% if module.edit_mobile_button_.edit_button_one.link_field_2.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_mobile_button_.edit_button_one.link_field_2.rel %}rel="{{ module.edit_mobile_button_.edit_button_one.link_field_2.rel }}"{% endif %}
+						>
+						{{ module.edit_mobile_button_.edit_button_one.button_text }}
+					</a>
+				</div>
+				<div class="mbt-two">
+					{% set href = module.edit_mobile_button_.edit_button_two.link_field_2.url.href %}
+					{% if module.edit_mobile_button_.edit_button_two.link_field_2.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a href="{{ href }}"
+						{% if module.edit_mobile_button_.edit_button_two.link_field_2.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_mobile_button_.edit_button_two.link_field_2.rel %}rel="{{ module.edit_mobile_button_.edit_button_two.link_field_2.rel }}"{% endif %}
+						>
+						{{ module.edit_mobile_button_.edit_button_two.button_text }}
+					</a>
+				</div>
+			</div>
+			<!-- end -->
+		</div>
+	</div>
+</nav>

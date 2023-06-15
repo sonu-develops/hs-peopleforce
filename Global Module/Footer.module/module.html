@@ -1,0 +1,239 @@
+<div class="ppl-footer">
+	<div class="container">
+		<div class="ppl-ft-main">
+			<div class="ppl-ft-main">
+				<!-- section one -->
+				<div class="ppl-frst d-flex">
+					<div class="pplf-lt col-6">
+						<div class="pplf-logo">
+							{% set href = module.edit_logo.logo_link.url.href %}
+							{% if module.edit_logo.logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+							{% endif %}
+							<a href="{{ href }}"
+								{% if module.edit_logo.logo_link.open_in_new_tab %}target="_blank"{% endif %}
+								{% if module.edit_logo.logo_link.rel %}rel="{{ module.edit_logo.logo_link.rel }}"{% endif %}
+								>
+								{% if module.edit_logo.edit_logo.src %}
+									{% set sizeAttrs = 'width="{{ module.edit_logo.edit_logo.width }}" height="{{ module.edit_logo.edit_logo.height }}"' %}
+									{% if module.edit_logo.edit_logo.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ module.edit_logo.edit_logo.width }}" height="{{ module.edit_logo.edit_logo.height }}" style="max-width: 100%; height: auto;"' %}
+										{% elif module.edit_logo.edit_logo.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ module.edit_logo.edit_logo.max_width }}" height="{{ module.edit_logo.edit_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = module.edit_logo.edit_logo.loading != 'disabled' ? 'loading="{{ module.edit_logo.edit_logo.loading }}"' : '' %}
+									<img src="{{ module.edit_logo.edit_logo.src }}" alt="{{ module.edit_logo.edit_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</a>
+						</div>
+					</div>
+					<div class="pplf-rt col-6 align-right">
+						<!-- footer flag start -->
+						
+						
+						
+						<div class="footnavbar-collapse" id="navbarCollapse">
+							<ul class="navbar-nav ms-lg-auto">
+								
+								<!-- Menu lang section start -->
+								<li class="nav-item dropdown drop-lang">
+									<a class="nav-link"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										
+										<div class="lg-main d-flex">
+											<div class="lg-rpt">
+												{% if module.edit_flag_section.edit_flag.src %}
+													{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag.width }}" height="{{ module.edit_flag_section.edit_flag.height }}"' %}
+													{% if module.edit_flag_section.edit_flag.size_type == 'auto' %}
+														{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag.width }}" height="{{ module.edit_flag_section.edit_flag.height }}" style="max-width: 100%; height: auto;"' %}
+														{% elif module.edit_flag_section.edit_flag.size_type == 'auto_custom_max' %}
+														{% set sizeAttrs = 'width="{{ module.edit_flag_section.edit_flag.max_width }}" height="{{ module.edit_flag_section.edit_flag.max_height }}" style="max-width: 100%; height: auto;"' %}
+													{% endif %}
+													{% set loadingAttr = module.edit_flag_section.edit_flag.loading != 'disabled' ? 'loading="{{ module.edit_flag_section.edit_flag.loading }}"' : '' %}
+													<img src="{{ module.edit_flag_section.edit_flag.src }}" alt="{{ module.edit_flag_section.edit_flag.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+												{% endif %}
+												
+											</div>
+											<div class="lp-tran">
+												{{ module.edit_flag_section.edit_flag_name }}
+											</div>
+										</div>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-end text-center" style="min-width: 5rem !important;">
+										{% for item in module.edit_flag_section.edit_language_drop_down %}
+											<li>
+												{% set href = item.link_field_1.url.href %}
+												{% if item.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+													{% set href = "mailto:" + href %}
+												{% endif %}
+												<a class="dropdown-item" href="{{ href }}"
+													{% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+													{% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel }}"{% endif %}
+													>
+													{{ item.language_text }}
+												</a>
+											</li>
+										{% endfor %}
+										
+									</ul>
+								</li>
+								<!-- end -->
+							</ul>
+						</div>
+						<!-- end section -->
+					</div>
+				</div>
+				<!-- end -->
+				<!-- section two -->
+				<div class="ppl-navig d-flex">
+					<div class="ppl-navig-main d-flex">
+						
+						<!-- menu start -->
+						<div class="nav-main">
+							<div class="head-nav">
+								<h4>{{ module.footer_navigation.menu_1.menu_heading }}</h4>
+							</div>
+							<div class="head-menu">
+								{% menu id="{{ module.footer_navigation.menu_1.footer_menu }}" %}
+							</div>
+						</div>
+						<!-- End -->
+						<!-- menu start -->
+						<div class="nav-main">
+							<div class="head-nav">
+								<h4>{{ module.footer_navigation.menu_2.menu_heading }}</h4>
+							</div>
+							<div class="head-menu">
+								{% menu id="{{ module.footer_navigation.menu_2.footer_menu }}" %}
+							</div>
+						</div>
+						<!-- End -->
+						<!-- menu start -->
+						<div class="nav-main">
+							<div class="head-nav">
+								<h4>{{ module.footer_navigation.menu_3.menu_heading }}</h4>
+							</div>
+							<div class="head-menu">
+								{% menu id="{{ module.footer_navigation.menu_3.footer_menu }}" %}
+							</div>
+						</div>
+						<!-- End -->
+						<!-- menu start -->
+						<div class="nav-main">
+							<div class="head-nav">
+								<h4>{{ module.footer_navigation.menu_4.menu_heading }}</h4>
+							</div>
+							<div class="head-menu">
+								{% menu id="{{ module.footer_navigation.menu_4.footer_menu }}" %}
+							</div>
+						</div>
+						<!-- End -->
+					</div>
+					<div class="ppl-star-mp">
+						<!-- left section -->
+						<div class="ppl-star-gpt d-flex">
+							<div class="ppl-strt-mn col-6">
+								<div class="ppl-sr-img">
+									
+									<ul>
+										{% for item in module.edit_left_section.edit_star_group %}
+											<li>
+												
+												{% if item.star_image.src %}
+													{% set sizeAttrs = 'width="{{ item.star_image.width }}" height="{{ item.star_image.height }}"' %}
+													{% if item.star_image.size_type == 'auto' %}
+														{% set sizeAttrs = 'width="{{ item.star_image.width }}" height="{{ item.star_image.height }}" style="max-width: 100%; height: auto;"' %}
+														{% elif item.star_image.size_type == 'auto_custom_max' %}
+														{% set sizeAttrs = 'width="{{ item.star_image.max_width }}" height="{{ item.star_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+													{% endif %}
+													{% set loadingAttr = item.star_image.loading != 'disabled' ? 'loading="{{ item.star_image.loading }}"' : '' %}
+													<img src="{{ item.star_image.src }}" alt="{{ item.star_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+												{% endif %}
+											</li>
+										{% endfor %}
+									</ul>
+									
+								</div>
+								<div class="ppl-content">
+									{{ module.edit_left_section.edit_content }}
+								</div>
+								
+							</div>
+							<!-- end -->
+							<!-- right section -->
+							<div class="ppl-strt-mn col-6">
+								<div class="ppl-sr-img">
+									<ul>
+										{% for item in module.edit_right_section.edit_star_listing %}
+											<li>
+												{% if item.star_image.src %}
+													{% set sizeAttrs = 'width="{{ item.star_image.width }}" height="{{ item.star_image.height }}"' %}
+													{% if item.star_image.size_type == 'auto' %}
+														{% set sizeAttrs = 'width="{{ item.star_image.width }}" height="{{ item.star_image.height }}" style="max-width: 100%; height: auto;"' %}
+														{% elif item.star_image.size_type == 'auto_custom_max' %}
+														{% set sizeAttrs = 'width="{{ item.star_image.max_width }}" height="{{ item.star_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+													{% endif %}
+													{% set loadingAttr = item.star_image.loading != 'disabled' ? 'loading="{{ item.star_image.loading }}"' : '' %}
+													<img src="{{ item.star_image.src }}" alt="{{ item.star_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+												{% endif %}
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+								<div class="ppl-content">
+									{{ module.edit_right_section.edit_content }}
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+						<!-- social sharing start -->
+						<div class="social-shar-gt">
+							
+							<ul class="d-flex">
+								{% for item in module.social_sharing %}
+									
+									<li>
+										{% set href = item.link_field.url.href %}
+										{% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+											{% set href = "mailto:" + href %}
+										{% endif %}
+										<a href="{{ href }}"
+											{% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+											{% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+											>
+											{% if item.social_sharing_image.src %}
+												{% set sizeAttrs = 'width="{{ item.social_sharing_image.width }}" height="{{ item.social_sharing_image.height }}"' %}
+												{% if item.social_sharing_image.size_type == 'auto' %}
+													{% set sizeAttrs = 'width="{{ item.social_sharing_image.width }}" height="{{ item.social_sharing_image.height }}" style="max-width: 100%; height: auto;"' %}
+													{% elif item.social_sharing_image.size_type == 'auto_custom_max' %}
+													{% set sizeAttrs = 'width="{{ item.social_sharing_image.max_width }}" height="{{ item.social_sharing_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+												{% endif %}
+												{% set loadingAttr = item.social_sharing_image.loading != 'disabled' ? 'loading="{{ item.social_sharing_image.loading }}"' : '' %}
+												<img src="{{ item.social_sharing_image.src }}" alt="{{ item.social_sharing_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+											{% endif %}
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+						<!-- end -->
+					</div>
+				</div>
+				<!-- end -->
+				<!-- section three -->
+				<div class="footer-btm d-flex">
+					<div class="ftr-left col-6">
+						<div class="ftr-copy">
+							{{ module.edit_footer_bottom_section.edit_left_content }}
+						</div>
+					</div>
+					<div class="ftr-right col-6 align-right">
+						<div class="ftr-made">
+							{{ module.edit_footer_bottom_section.right_content }}
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+<section>
+<div class="card-mp">
+	<div class="container">
+		<div class="heading-crd">
+			{{ module.edit_heading }}
+		</div>
+		<div class="card-tp">
+			<div class="card-main d-flex">
+				{% for item in module.edit_card_group %}
+					<div class="card-item col-3">
+						<div class="card-style">
+							<div class="card-imng">
+								{% if item.edit_feature_image.src %}
+									{% set sizeAttrs = 'width="{{ item.edit_feature_image.width }}" height="{{ item.edit_feature_image.height }}"' %}
+									{% if item.edit_feature_image.size_type == 'auto' %}
+										{% set sizeAttrs = 'width="{{ item.edit_feature_image.width }}" height="{{ item.edit_feature_image.height }}" style="max-width: 100%; height: auto;"' %}
+										{% elif item.edit_feature_image.size_type == 'auto_custom_max' %}
+										{% set sizeAttrs = 'width="{{ item.edit_feature_image.max_width }}" height="{{ item.edit_feature_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+									{% endif %}
+									{% set loadingAttr = item.edit_feature_image.loading != 'disabled' ? 'loading="{{ item.edit_feature_image.loading }}"' : '' %}
+									<img src="{{ item.edit_feature_image.src }}" alt="{{ item.edit_feature_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+								{% endif %}
+							</div>
+							<div class="card-main-cont">
+								{{ item.edit_content }}
+							</div>
+							<div class="card-btn">
+								{% set href = item.edit_button_group.link_field.url.href %}
+								{% if item.edit_button_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+									{% set href = "mailto:" + href %}
+								{% endif %}
+								<a href="{{ href }}"
+									{% if item.edit_button_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+									{% if item.edit_button_group.link_field.rel %}rel="{{ item.edit_button_group.link_field.rel }}"{% endif %}
+									>
+									{{ item.edit_button_group.edit_button_text }} <i class="fa fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+  </section>

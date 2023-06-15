@@ -1,0 +1,143 @@
+[ {
+  "id" : "c8c612a6-d351-3b4c-f3e2-c93592a5b95a",
+  "name" : "logo_field",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/PeopleForce%20Logo.svg",
+    "alt" : "PeopleForce Logo",
+    "suppress_company_name" : true,
+    "width" : 160,
+    "height" : 40
+  }
+}, {
+  "id" : "377e5cbd-f039-7ce9-c09a-e4fb278dd1d1",
+  "name" : "edit_flag_section",
+  "display_width" : null,
+  "label" : "Edit Flag Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "28493db0-46ab-b097-2ad3-7d846ade01a0",
+    "name" : "edit_flag_image",
+    "display_width" : null,
+    "label" : "Edit Flag Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/United-Kingdom_GB%20(1).png",
+      "alt" : "United-Kingdom_GB (1)",
+      "loading" : "lazy",
+      "width" : 18,
+      "height" : 14,
+      "max_width" : 18,
+      "max_height" : 14
+    }
+  }, {
+    "id" : "bf0eced6-9102-e30a-a627-24e8c20c4232",
+    "name" : "edit_language_button_",
+    "display_width" : null,
+    "label" : "Edit Language Button ",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "fcd81db0-6f6d-c39f-49b9-c2ddd1db8e1c",
+      "name" : "edit_page_name",
+      "display_width" : null,
+      "label" : "Edit Page Name",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "En"
+    }, {
+      "id" : "7c3d5d54-f96d-a1e7-a694-ffea05d0a465",
+      "name" : "edit_link",
+      "display_width" : null,
+      "label" : "Edit Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_page_name" : "En",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_flag_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/United-Kingdom_GB%20(1).png",
+      "alt" : "United-Kingdom_GB (1)",
+      "loading" : "lazy",
+      "width" : 18,
+      "height" : 14,
+      "max_width" : 18,
+      "max_height" : 14
+    },
+    "edit_language_button_" : {
+      "edit_page_name" : "En",
+      "edit_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "0bf1050e-8383-dc62-67f4-aa06ae1efa5d",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "7b7bd1ef-1d33-42d6-bab8-f605f4cbd3fb",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

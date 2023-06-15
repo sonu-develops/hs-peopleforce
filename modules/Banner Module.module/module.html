@@ -1,0 +1,192 @@
+<div class="banner-module" style="background-image: url({{ module.edit_banner_image.src }});">
+	<div class="container">
+		<div class="d-flex">
+			<div class="col-lg-6 align-center mrg-top-10">
+				<div class="bnt-cent">
+					<div class="content-heading">
+						<div class="cnt-heading">
+							{{ module.edit_left_section.edit_banner_content }}
+						</div>
+					</div>
+					<div class="content-img">
+						
+						<div class="img-listing">
+							<div class="wd-section-d">
+								{% for item in module.edit_widget_group %}
+									<div class="wd-section-inner">
+										<div class="wd-sec-style">
+											<div class="wid-icon">
+												{% if item.edit_icon.src %}
+													{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}"' %}
+													{% if item.edit_icon.size_type == 'auto' %}
+														{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}" style="max-width: 100%; height: auto;"' %}
+														{% elif item.edit_icon.size_type == 'auto_custom_max' %}
+														{% set sizeAttrs = 'width="{{ item.edit_icon.max_width }}" height="{{ item.edit_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+													{% endif %}
+													{% set loadingAttr = item.edit_icon.loading != 'disabled' ? 'loading="{{ item.edit_icon.loading }}"' : '' %}
+													<img src="{{ item.edit_icon.src }}" alt="{{ item.edit_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+												{% endif %}
+											</div>
+											<div class="text-gpt">
+												<p>{{ item.edit_content }}</p>
+											</div>
+											<div class="wid-star">
+												<ul>
+													{% for item2 in item.edit_star_group %}
+														<li>
+															{% if item2.edit_star.src %}
+																{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}"' %}
+																{% if item2.edit_star.size_type == 'auto' %}
+																	{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}" style="max-width: 100%; height: auto;"' %}
+																	{% elif item2.edit_star.size_type == 'auto_custom_max' %}
+																	{% set sizeAttrs = 'width="{{ item2.edit_star.max_width }}" height="{{ item2.edit_star.max_height }}" style="max-width: 100%; height: auto;"' %}
+																{% endif %}
+																{% set loadingAttr = item2.edit_star.loading != 'disabled' ? 'loading="{{ item2.edit_star.loading }}"' : '' %}
+																<img src="{{ item2.edit_star.src }}" alt="{{ item2.edit_star.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+															{% endif %}
+														</li>
+													{% endfor %}
+												</ul>
+											</div>
+											<div class="botm-content">
+												<p>{{ item.edit_rating }}</p>
+											</div>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				 
+					<div class="content-badge">
+						<div class="bdg-main d-flex">
+							<div class="badge-left align-center">
+								<div class="badge-tpts">
+									{% if module.edit_left_section.edit_badge_section.edit_badge.src %}
+										{% set sizeAttrs = 'width="{{ module.edit_left_section.edit_badge_section.edit_badge.width }}" height="{{ module.edit_left_section.edit_badge_section.edit_badge.height }}"' %}
+										{% if module.edit_left_section.edit_badge_section.edit_badge.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ module.edit_left_section.edit_badge_section.edit_badge.width }}" height="{{ module.edit_left_section.edit_badge_section.edit_badge.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif module.edit_left_section.edit_badge_section.edit_badge.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ module.edit_left_section.edit_badge_section.edit_badge.max_width }}" height="{{ module.edit_left_section.edit_badge_section.edit_badge.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = module.edit_left_section.edit_badge_section.edit_badge.loading != 'disabled' ? 'loading="{{ module.edit_left_section.edit_badge_section.edit_badge.loading }}"' : '' %}
+										<img src="{{ module.edit_left_section.edit_badge_section.edit_badge.src }}" alt="{{ module.edit_left_section.edit_badge_section.edit_badge.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								</div>
+							</div>
+							<div class="badge-right">
+								<div class="badge-gpt">
+									<p>
+										{{ module.edit_left_section.edit_badge_section.edit_feedback_content }}
+									</p>
+									<div class="star-sec d-flex">
+										<div class="str-left">
+											{{ module.edit_left_section.edit_badge_section.edit_rating_number }}
+										</div>
+										<div class="str-right">
+											<ul>
+												{% for item in module.edit_left_section.edit_badge_section.edit_star_listing %}
+													<li>
+														{% if item.edit_start.src %}
+															{% set sizeAttrs = 'width="{{ item.edit_start.width }}" height="{{ item.edit_start.height }}"' %}
+															{% if item.edit_start.size_type == 'auto' %}
+																{% set sizeAttrs = 'width="{{ item.edit_start.width }}" height="{{ item.edit_start.height }}" style="max-width: 100%; height: auto;"' %}
+																{% elif item.edit_start.size_type == 'auto_custom_max' %}
+																{% set sizeAttrs = 'width="{{ item.edit_start.max_width }}" height="{{ item.edit_start.max_height }}" style="max-width: 100%; height: auto;"' %}
+															{% endif %}
+															{% set loadingAttr = item.edit_start.loading != 'disabled' ? 'loading="{{ item.edit_start.loading }}"' : '' %}
+															<img src="{{ item.edit_start.src }}" alt="{{ item.edit_start.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+														{% endif %}
+													</li>
+												{% endfor %}
+											</ul>
+										</div>
+									</div>
+									<div class="str-btm">
+										{{ module.edit_left_section.edit_badge_section.edit_profile_description }}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="form-section white-bg-style">
+					<div class="form-hd">
+						{{ module.edit_right_section.edit_form_heading }}
+					</div>
+					<!--   start  -->
+					<div class="form-tmt">
+						<ul>
+							{% for item in module.edit_right_section.edit_listing_content %}
+								<li>
+									{{ item.edit_list_test }}
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<!--    label        -->
+					<div class="label-style">
+						<div class="d-flex lb-gp-center">
+							<div class="left-lb align-center">
+								{{ module.edit_right_section.edit_label_.edit_label_content }}
+							</div>
+							<div class="right-lb">
+								
+								<div class="sales-person">
+									<ul>
+										<li>{% if module.edit_right_section.edit_sales_person_images.edit_image.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image.height }}"' %}
+											{% if module.edit_right_section.edit_sales_person_images.edit_image.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_right_section.edit_sales_person_images.edit_image.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image.max_width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_right_section.edit_sales_person_images.edit_image.loading != 'disabled' ? 'loading="{{ module.edit_right_section.edit_sales_person_images.edit_image.loading }}"' : '' %}
+											<img src="{{ module.edit_right_section.edit_sales_person_images.edit_image.src }}" alt="{{ module.edit_right_section.edit_sales_person_images.edit_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}</li>
+										<li>{% if module.edit_right_section.edit_sales_person_images.edit_image_2.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.height }}"' %}
+											{% if module.edit_right_section.edit_sales_person_images.edit_image_2.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_right_section.edit_sales_person_images.edit_image_2.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.max_width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_right_section.edit_sales_person_images.edit_image_2.loading != 'disabled' ? 'loading="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.loading }}"' : '' %}
+											<img src="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.src }}" alt="{{ module.edit_right_section.edit_sales_person_images.edit_image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}</li>
+										<li>{% if module.edit_right_section.edit_sales_person_images.edit_image_3.src %}
+											{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.height }}"' %}
+											{% if module.edit_right_section.edit_sales_person_images.edit_image_3.size_type == 'auto' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.height }}" style="max-width: 100%; height: auto;"' %}
+												{% elif module.edit_right_section.edit_sales_person_images.edit_image_3.size_type == 'auto_custom_max' %}
+												{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.max_width }}" height="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+											{% endif %}
+											{% set loadingAttr = module.edit_right_section.edit_sales_person_images.edit_image_3.loading != 'disabled' ? 'loading="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.loading }}"' : '' %}
+											<img src="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.src }}" alt="{{ module.edit_right_section.edit_sales_person_images.edit_image_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+										{% endif %}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--    end        -->
+					<div class="form-main">
+						{% form
+							form_to_use="{{ module.edit_right_section.edit_form.form_id }}"
+							response_response_type="{{ module.edit_right_section.edit_form.response_type }}"
+							response_message="{{ module.edit_right_section.edit_form.message }}"
+							response_redirect_id="{{ module.edit_right_section.edit_form.redirect_id }}"
+							response_redirect_url="{{module.edit_right_section.edit_form.redirect_url}}"
+							gotowebinar_webinar_key="{{ module.edit_right_section.edit_form.gotowebinar_webinar_key }}"
+							%}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

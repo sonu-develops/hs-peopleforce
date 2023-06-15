@@ -1,0 +1,111 @@
+[ {
+  "id" : "2ef47aab-1af7-7fa2-55cc-c898e4e1650a",
+  "name" : "edit_left_section",
+  "display_width" : null,
+  "label" : "Edit Left Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "91a22f6e-e644-7527-4910-f399527edd28",
+    "name" : "edit_left_content",
+    "display_width" : null,
+    "label" : "Edit Left Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Get started with PeopleForce today</h2>\n<p>Automate your HR routine to create a high performance culture in your company. PeopleForce is your best HRM alternative to stay business driven but people focused.</p>"
+  }, {
+    "id" : "5c883e69-48ad-1566-8686-3eb8bf3ea43c",
+    "name" : "edit_button_group",
+    "display_width" : null,
+    "label" : "Edit Button Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "42a416c3-919c-eba7-8f1e-17ab88bded73",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Request free demo"
+    }, {
+      "id" : "81f8f854-fce9-f3d8-7a43-2e702cb2b1b5",
+      "name" : "edit_button_link",
+      "display_width" : null,
+      "label" : "Edit Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "Request free demo",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_left_content" : "<h2>Get started with PeopleForce today</h2>\n<p>Automate your HR routine to create a high performance culture in your company. PeopleForce is your best HRM alternative to stay business driven but people focused.</p>",
+    "edit_button_group" : {
+      "edit_button_text" : "Request free demo",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "7b799ec7-f9f0-8805-1a12-dafe08cebd27",
+  "name" : "edit_image",
+  "display_width" : null,
+  "label" : "Edit Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20(7)-1.png",
+    "alt" : "Rectangle (7)-1",
+    "loading" : "lazy",
+    "width" : 353,
+    "height" : 245,
+    "max_width" : 353,
+    "max_height" : 245
+  }
+} ]

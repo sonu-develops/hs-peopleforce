@@ -1,0 +1,205 @@
+[ {
+  "id" : "c0b1b82e-db8e-be01-0d96-24f71b40b4ec",
+  "name" : "edit_listing",
+  "display_width" : null,
+  "label" : "Edit Listing",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 15
+  },
+  "children" : [ {
+    "id" : "963b6689-2ea4-e8de-1cd6-7f938b989bf6",
+    "name" : "edit_logo",
+    "display_width" : null,
+    "label" : "Edit Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  }, {
+    "edit_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Roosh-1.png",
+      "alt" : "Roosh-1",
+      "loading" : "lazy",
+      "width" : 128,
+      "height" : 52,
+      "max_width" : 128,
+      "max_height" : 52
+    }
+  } ]
+} ]

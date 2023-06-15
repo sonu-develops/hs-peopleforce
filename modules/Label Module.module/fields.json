@@ -1,0 +1,111 @@
+[ {
+  "id" : "047a515b-5aff-054f-45b9-34e054a14350",
+  "name" : "edit_left_group",
+  "display_width" : null,
+  "label" : "Edit Left Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "031e9837-fd33-c2fc-7521-72d2cabce06e",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Готовы к автоматизации HR-процессов?</h3>"
+  }, {
+    "id" : "0f9109af-4eec-0645-d239-7dd97c61a4d1",
+    "name" : "edit_button",
+    "display_width" : null,
+    "label" : "Edit Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "469fd128-715d-d757-8feb-704e4d59d3f3",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Попробовать бесплатно"
+    }, {
+      "id" : "615fd89b-fbc9-7faf-6336-6b318601fe02",
+      "name" : "edit_button",
+      "display_width" : null,
+      "label" : "Edit Button",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#test-popup",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "Попробовать бесплатно",
+      "edit_button" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#test-popup",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_content" : "<h3>Готовы к автоматизации HR-процессов?</h3>",
+    "edit_button" : {
+      "edit_button_text" : "Попробовать бесплатно",
+      "edit_button" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#test-popup",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "9359faab-da31-942e-f65d-f3f1700adbef",
+  "name" : "edit_image",
+  "display_width" : null,
+  "label" : "Edit Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Group%20787880226.png",
+    "alt" : "Group 787880226",
+    "loading" : "lazy",
+    "width" : 600,
+    "height" : 188,
+    "max_width" : 600,
+    "max_height" : 188
+  }
+} ]

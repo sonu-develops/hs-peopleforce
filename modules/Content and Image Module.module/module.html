@@ -1,0 +1,25 @@
+<div class="two-col">
+    <div class="container">
+        <div class="{{ module.change_direction }} d-flex">
+            <div class="two-col-left col-6 align-center">
+                <div class="two-content">
+                    {{ module.edit_module_section.edit_content }}
+                </div>
+            </div>
+            <div class="two-col-right col-6">
+                <div class="two-img">
+                    {% if module.edit_module_section.edit_image.src %}
+                        {% set sizeAttrs = 'width="{{ module.edit_module_section.edit_image.width }}" height="{{ module.edit_module_section.edit_image.height }}"' %}
+                        {% if module.edit_module_section.edit_image.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ module.edit_module_section.edit_image.width }}" height="{{ module.edit_module_section.edit_image.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif module.edit_module_section.edit_image.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ module.edit_module_section.edit_image.max_width }}" height="{{ module.edit_module_section.edit_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                        {% endif %}
+                        {% set loadingAttr = module.edit_module_section.edit_image.loading != 'disabled' ? 'loading="{{ module.edit_module_section.edit_image.loading }}"' : '' %}
+                        <img src="{{ module.edit_module_section.edit_image.src }}" alt="{{ module.edit_module_section.edit_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

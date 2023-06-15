@@ -1,0 +1,69 @@
+[ {
+  "id" : "fc65538f-0f2e-94db-b842-5894065308a5",
+  "name" : "change_direction",
+  "display_width" : null,
+  "label" : "Change Direction",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "two-col-main", "Left" ], [ "two-col-fl", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "two-col-main"
+}, {
+  "id" : "3316541c-cf85-b7cd-8d6e-057b28c80dc2",
+  "name" : "edit_module_section",
+  "display_width" : null,
+  "label" : "Edit Module Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "12b339d7-5007-2a62-1d73-8a6ca21c2968",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Отчеты и HR-аналитика</h2>\n<p>Собирайте отчеты и ознакамливайтесь с HR-аналитикой, как только вам нужно. Теперь вы можете за пару кликов собрать воедино необходимые вам данные:</p>\n<ul>\n<li>Отчеты о численности персонала, текучести и истории занятости</li>\n<li>Истории ЗП, вакансий и карьерных изменений</li>\n<li>Больничные и неиспользованные отпуска</li>\n<li>Учет имущества, анализ настроения и событий</li>\n</ul>"
+  }, {
+    "id" : "f2b4c268-e2f4-0bf7-8f5c-1edcff72450e",
+    "name" : "edit_image",
+    "display_width" : null,
+    "label" : "Edit Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881648-1.png",
+      "alt" : "Frame 787881648-1",
+      "loading" : "lazy",
+      "width" : 573,
+      "height" : 445,
+      "max_width" : 573,
+      "max_height" : 445
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_content" : "<h2>Отчеты и HR-аналитика</h2>\n<p>Собирайте отчеты и ознакамливайтесь с HR-аналитикой, как только вам нужно. Теперь вы можете за пару кликов собрать воедино необходимые вам данные:</p>\n<ul>\n<li>Отчеты о численности персонала, текучести и истории занятости</li>\n<li>Истории ЗП, вакансий и карьерных изменений</li>\n<li>Больничные и неиспользованные отпуска</li>\n<li>Учет имущества, анализ настроения и событий</li>\n</ul>",
+    "edit_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881648-1.png",
+      "alt" : "Frame 787881648-1",
+      "loading" : "lazy",
+      "width" : 573,
+      "height" : 445,
+      "max_width" : 573,
+      "max_height" : 445
+    }
+  }
+} ]

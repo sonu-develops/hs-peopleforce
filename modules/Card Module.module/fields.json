@@ -1,0 +1,184 @@
+[ {
+  "id" : "10bd2288-37d8-e51f-21b0-e485ef2a5160",
+  "name" : "edit_heading",
+  "display_width" : null,
+  "label" : "Edit Heading",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Why PeopleForce?</h2>\n<p>Choose the features that help you solve specific challenges in your company</p>"
+}, {
+  "id" : "a949132f-5f30-f4f3-0ea3-4c9b0bccc37e",
+  "name" : "edit_card_group",
+  "display_width" : null,
+  "label" : "Edit Card Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "13ee4644-aa95-9cc7-f3f3-4fcd39661ebe",
+    "name" : "edit_feature_image",
+    "display_width" : null,
+    "label" : "Edit Feature Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124277.png",
+      "alt" : "Rectangle 124277",
+      "loading" : "lazy",
+      "width" : 280,
+      "height" : 200,
+      "max_width" : 280,
+      "max_height" : 200
+    }
+  }, {
+    "id" : "0e2baa75-61f6-220a-877d-5d16ecdc2c67",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>"
+  }, {
+    "id" : "ba27ba8d-e889-0edb-d29a-ee51ed0f4c8d",
+    "name" : "edit_button_group",
+    "display_width" : null,
+    "label" : "Edit Button Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "e835a84a-41eb-5d13-d5b4-3deee8e529fe",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Get started"
+    }, {
+      "id" : "7bae996f-b107-8dc2-fccc-5c00396d3e75",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_feature_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124277.png",
+      "alt" : "Rectangle 124277",
+      "loading" : "lazy",
+      "width" : 280,
+      "height" : 200,
+      "max_width" : 280,
+      "max_height" : 200
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_group" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "edit_feature_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124277.png",
+      "alt" : "Rectangle 124277",
+      "loading" : "lazy",
+      "width" : 280,
+      "height" : 200,
+      "max_width" : 280,
+      "max_height" : 200
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_group" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "edit_feature_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124277.png",
+      "alt" : "Rectangle 124277",
+      "loading" : "lazy",
+      "width" : 280,
+      "height" : 200,
+      "max_width" : 280,
+      "max_height" : 200
+    },
+    "edit_content" : "<h3>Настраивайте политику отпусков</h3>\n<p>Назначайте, одобряйте или отклоняйте запрос на выходные 24/7 из любой точки мира.</p>",
+    "edit_button_group" : {
+      "edit_button_text" : "Get started",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ]
+} ]

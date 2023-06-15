@@ -1,0 +1,122 @@
+<div class="banner-module" style="background-image: url({{ module.edit_banner_image.src }});">
+	<div class="container">
+		<div class="d-flex">
+			<div class="col-lg-6 align:center;">
+				<div class="content-heading">
+					<div class="cnt-heading">
+						{{ module.edit_left_section.edit_banner_content }}
+					</div>
+					
+				</div>
+				<!--    button start      --> 
+				<div class="ban-btn-cp">
+					{% set href = module.edit_left_section.edit_button_group.link_field.url.href %}
+					{% if module.edit_left_section.edit_button_group.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+						{% set href = "mailto:" + href %}
+					{% endif %}
+					<a class="btn btn btn-primary w-full w-lg-auto open-popup-link" href="{{ href }}"
+						{% if module.edit_left_section.edit_button_group.link_field.open_in_new_tab %}target="_blank"{% endif %}
+						{% if module.edit_left_section.edit_button_group.link_field.rel %}rel="{{ module.edit_left_section.edit_button_group.link_field.rel }}"{% endif %}
+						>
+						{{ module.edit_left_section.edit_button_group.edit_button_text }}
+					</a>
+				</div> 
+				<!--   end       -->
+        <div class="mob-img-banner2">
+          {% if module.edit_mobile_banner_image.src %}
+	{% set sizeAttrs = 'width="{{ module.edit_mobile_banner_image.width }}" height="{{ module.edit_mobile_banner_image.height }}"' %}
+	{% if module.edit_mobile_banner_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.edit_mobile_banner_image.width }}" height="{{ module.edit_mobile_banner_image.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.edit_mobile_banner_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.edit_mobile_banner_image.max_width }}" height="{{ module.edit_mobile_banner_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.edit_mobile_banner_image.loading != 'disabled' ? 'loading="{{ module.edit_mobile_banner_image.loading }}"' : '' %}
+	<img src="{{ module.edit_mobile_banner_image.src }}" alt="{{ module.edit_mobile_banner_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+        </div>
+				<div class="content-img">
+					 <div class="img-listing">
+	<div class="wd-section-d">
+		{% for item in module.edit_rating_listing %}
+			<div class="wd-section-inner">
+				<div class="wd-sec-style">
+					<div class="wid-icon">
+						{% if item.edit_icon.src %}
+							{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}"' %}
+							{% if item.edit_icon.size_type == 'auto' %}
+								{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}" style="max-width: 100%; height: auto;"' %}
+								{% elif item.edit_icon.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ item.edit_icon.max_width }}" height="{{ item.edit_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = item.edit_icon.loading != 'disabled' ? 'loading="{{ item.edit_icon.loading }}"' : '' %}
+							<img src="{{ item.edit_icon.src }}" alt="{{ item.edit_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+					<div class="text-gpt">
+						<p>{{ item.edit_name }}</p>
+					</div>
+					<div class="wid-star">
+						<ul>
+							{% for item2 in item.edit_star_group %}
+								<li>
+									{% if item2.edit_star.src %}
+										{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}"' %}
+										{% if item2.edit_star.size_type == 'auto' %}
+											{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}" style="max-width: 100%; height: auto;"' %}
+											{% elif item2.edit_star.size_type == 'auto_custom_max' %}
+											{% set sizeAttrs = 'width="{{ item2.edit_star.max_width }}" height="{{ item2.edit_star.max_height }}" style="max-width: 100%; height: auto;"' %}
+										{% endif %}
+										{% set loadingAttr = item2.edit_star.loading != 'disabled' ? 'loading="{{ item2.edit_star.loading }}"' : '' %}
+										<img src="{{ item2.edit_star.src }}" alt="{{ item2.edit_star.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+									{% endif %}
+								 	
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="botm-content">
+						<p>{{ item.edit_rating }}</p>
+					</div>
+				</div>
+			</div>
+		{% endfor %} 
+	</div>
+	
+</div>
+					 
+					
+				</div>
+				<div class="content-badge">
+					<!-- section start --> 
+					<!-- End -->
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="banner-img-v2">
+					{% if module.edit_right_section.image_field.src %}
+						{% set sizeAttrs = 'width="{{ module.edit_right_section.image_field.width }}" height="{{ module.edit_right_section.image_field.height }}"' %}
+						{% if module.edit_right_section.image_field.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ module.edit_right_section.image_field.width }}" height="{{ module.edit_right_section.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif module.edit_right_section.image_field.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ module.edit_right_section.image_field.max_width }}" height="{{ module.edit_right_section.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = module.edit_right_section.image_field.loading != 'disabled' ? 'loading="{{ module.edit_right_section.image_field.loading }}"' : '' %}
+						<img src="{{ module.edit_right_section.image_field.src }}" alt="{{ module.edit_right_section.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+				<div class="mb-img-bn-v1">
+					{% if module.edit_right_section.edit_mobile_image.src %}
+						{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_mobile_image.width }}" height="{{ module.edit_right_section.edit_mobile_image.height }}"' %}
+						{% if module.edit_right_section.edit_mobile_image.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_mobile_image.width }}" height="{{ module.edit_right_section.edit_mobile_image.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif module.edit_right_section.edit_mobile_image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ module.edit_right_section.edit_mobile_image.max_width }}" height="{{ module.edit_right_section.edit_mobile_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = module.edit_right_section.edit_mobile_image.loading != 'disabled' ? 'loading="{{ module.edit_right_section.edit_mobile_image.loading }}"' : '' %}
+						<img src="{{ module.edit_right_section.edit_mobile_image.src }}" alt="{{ module.edit_right_section.edit_mobile_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

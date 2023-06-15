@@ -1,0 +1,92 @@
+<div class="banner-module" style="background-image: url({{ module.edit_banner_image.src }});">
+	<div class="container">
+		<div class="d-flex">
+			<div class="col-lg-6 align-center mrg-top-20">
+        <div class="content-hdt-v1">
+				<div class="content-heading">
+					<div class="cnt-heading">
+						{{ module.edit_left_section.edit_banner_content }}
+					</div>
+				</div>
+				<!-- list section start -->
+				<div class="content-lstg">
+					{% for item in module.edit_left_section.edit_banner_content_listing %}
+						<div class="cont-inner-tp">
+							<div class="d-flex">
+								<div class="cnt-left">
+									{{ item.edit_number_text }}
+								</div>
+								<div class="ban-cont-right">
+									{{ item.edit_content }}
+								</div>
+							</div>
+							<div class="btm-cont-r">
+								<p>{{ item.edit_button_content }}</p>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<!-- End -->
+			</div>
+      </div>
+			<div class="col-lg-6">
+				<div class="form-section white-bg-style">
+					<div class="form-hd">
+						{{ module.edit_right_section.edit_form_heading }}
+						
+					</div>
+					<!-- star section -->
+					<div class="form-tmt">
+						
+						<ul>
+							
+							<li>
+								30-Days Free Trial
+							</li>
+							
+							<li>
+								No hidden fees
+							</li>
+							
+							<li>
+								No credit card
+							</li>
+							
+						</ul>
+						
+					</div>
+					<!-- end -->
+					<!-- section star -->
+					<div class="label-style">
+						<div class="d-flex lb-gp-center">
+							<div class="left-lb align-center">
+								Наши менеджеры свяжутся с вами
+							</div>
+							<div class="right-lb">
+								
+								
+								
+								
+								
+								
+								<img src="https://24983810.fs1.hubspotusercontent-eu1.net/hub/24983810/hubfs/Frame%20787882283%20(1).png?width=120&amp;height=50&amp;name=Frame%20787882283%20(1).png" alt="Frame 787882283 (1)" loading="lazy" width="120" height="50" style="max-width: 100%; height: auto;">
+							</div>
+						</div>
+					</div>
+					<!-- end -->
+					<div class="form-main">
+						{% form
+							form_to_use="{{ module.edit_right_section.edit_form.form_id }}"
+							response_response_type="{{ module.edit_right_section.edit_form.response_type }}"
+							response_message="{{ module.edit_right_section.edit_form.message }}"
+							response_redirect_id="{{ module.edit_right_section.edit_form.redirect_id }}"
+							response_redirect_url="{{module.edit_right_section.edit_form.redirect_url}}"
+							gotowebinar_webinar_key="{{ module.edit_right_section.edit_form.gotowebinar_webinar_key }}"
+							%}
+						</div>
+					</div>
+        
+				</div>
+			</div>
+		</div>
+	</div>

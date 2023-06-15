@@ -1,0 +1,1197 @@
+[ {
+  "id" : "9648e2a1-f160-f32f-d464-3b448c78883a",
+  "name" : "edit_left_section",
+  "display_width" : null,
+  "label" : "Edit Left Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "10ee2f31-4f65-d1d6-d260-c1ac036dd9a1",
+    "name" : "edit_banner_content",
+    "display_width" : null,
+    "label" : "Edit Banner Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Автоматизируйте HR и переходите на</h4>\n<h1>Новый уровень эффективности бизнеса</h1>\n<p>Забудьте о рутине и сфокусируйтесь на важных целях <br>вашей компании</p>"
+  }, {
+    "id" : "c6838071-495d-f0d7-d7eb-8d0dd3c510f3",
+    "name" : "edit_rating_image",
+    "display_width" : null,
+    "label" : "Edit Rating Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Group%20787880227%20(1).png",
+      "alt" : "Group 787880227 (1)",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 149,
+      "max_width" : 472,
+      "max_height" : 149
+    }
+  }, {
+    "id" : "ffb8e258-e4ed-2e81-a4f0-f98ee65d2277",
+    "name" : "mobile_rating_image",
+    "display_width" : null,
+    "label" : "Mobile Rating Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Star%20ratings%20(3).png",
+      "alt" : "Star ratings (3)",
+      "loading" : "lazy",
+      "width" : 330,
+      "height" : 184,
+      "max_width" : 330,
+      "max_height" : 184
+    }
+  }, {
+    "id" : "6e6eb2fa-ca97-b44b-d0c3-8d1b6b76eb9a",
+    "name" : "edit_badge_section",
+    "display_width" : null,
+    "label" : "Edit Badge Section",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bc099b7c-ca44-5e93-c38d-cb7c9a19415c",
+      "name" : "edit_badge",
+      "display_width" : null,
+      "label" : "Edit Badge",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/badge%201.png",
+        "alt" : "badge 1",
+        "loading" : "lazy",
+        "width" : 90,
+        "height" : 81,
+        "max_width" : 90,
+        "max_height" : 81
+      }
+    }, {
+      "id" : "34e1df05-c38e-ed15-ce50-e904c5aab801",
+      "name" : "edit_feedback_content",
+      "display_width" : null,
+      "label" : "Edit Feedback Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>\"I have used Trello, Jira and Asana... monday.com is the best tool so far.\"</p>"
+    }, {
+      "id" : "f721943a-3308-0e49-c2af-ded69e8a0fdc",
+      "name" : "edit_rating_number",
+      "display_width" : null,
+      "label" : "Edit Rating Number",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "4.5"
+    }, {
+      "id" : "1feede7b-1529-e212-6be2-988ebeedb16d",
+      "name" : "edit_star_listing",
+      "display_width" : null,
+      "label" : "Edit Star Listing",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 5
+      },
+      "children" : [ {
+        "id" : "e22ddaad-ebb8-22a2-4445-d75dee9f8c92",
+        "name" : "edit_start",
+        "display_width" : null,
+        "label" : "Edit Start",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : [ {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      } ]
+    }, {
+      "id" : "06ea9db1-9f1c-1b24-afec-c4e449e59779",
+      "name" : "edit_profile_description",
+      "display_width" : null,
+      "label" : "Edit Profile Description",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "<b>Victor M</b> | Data Science Specialist"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_badge" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/badge%201.png",
+        "alt" : "badge 1",
+        "loading" : "lazy",
+        "width" : 90,
+        "height" : 81,
+        "max_width" : 90,
+        "max_height" : 81
+      },
+      "edit_feedback_content" : "<p>\"I have used Trello, Jira and Asana... monday.com is the best tool so far.\"</p>",
+      "edit_rating_number" : "4.5",
+      "edit_star_listing" : [ {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      } ],
+      "edit_profile_description" : "<b>Victor M</b> | Data Science Specialist"
+    }
+  }, {
+    "id" : "fe41c123-0180-af49-d862-4aa243d48381",
+    "name" : "edit_widget_images",
+    "display_width" : null,
+    "label" : "Edit Widget Images",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_banner_content" : "<h4>Автоматизируйте HR и переходите на</h4>\n<h1>Новый уровень эффективности бизнеса</h1>\n<p>Забудьте о рутине и сфокусируйтесь на важных целях <br>вашей компании</p>",
+    "edit_rating_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Group%20787880227%20(1).png",
+      "alt" : "Group 787880227 (1)",
+      "loading" : "lazy",
+      "width" : 472,
+      "height" : 149,
+      "max_width" : 472,
+      "max_height" : 149
+    },
+    "mobile_rating_image" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Star%20ratings%20(3).png",
+      "alt" : "Star ratings (3)",
+      "loading" : "lazy",
+      "width" : 330,
+      "height" : 184,
+      "max_width" : 330,
+      "max_height" : 184
+    },
+    "edit_badge_section" : {
+      "edit_badge" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/badge%201.png",
+        "alt" : "badge 1",
+        "loading" : "lazy",
+        "width" : 90,
+        "height" : 81,
+        "max_width" : 90,
+        "max_height" : 81
+      },
+      "edit_feedback_content" : "<p>\"I have used Trello, Jira and Asana... monday.com is the best tool so far.\"</p>",
+      "edit_rating_number" : "4.5",
+      "edit_star_listing" : [ {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      }, {
+        "edit_start" : {
+          "size_type" : "auto",
+          "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bi_star-fill.png",
+          "alt" : "bi_star-fill",
+          "loading" : "lazy",
+          "width" : 17,
+          "height" : 17,
+          "max_width" : 17,
+          "max_height" : 17
+        }
+      } ],
+      "edit_profile_description" : "<b>Victor M</b> | Data Science Specialist"
+    },
+    "edit_widget_images" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "0bfbddac-d476-093f-b6e8-26553b1bd05f",
+  "name" : "edit_right_section",
+  "display_width" : null,
+  "label" : "Edit Right Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b7e43434-170f-261b-55f8-f315966b39c6",
+    "name" : "edit_form_heading",
+    "display_width" : null,
+    "label" : "Edit Form Heading",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>14 дней PeopleForce бесплатно</h3>\n<p>Заполните форму — и наши менеджеры свяжутся с вами</p>"
+  }, {
+    "id" : "b027af52-8938-2c39-6fa8-c3c17a5cd54b",
+    "name" : "edit_sales_person_images",
+    "display_width" : null,
+    "label" : "Edit Sales person Images",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "e1ba199c-5eb4-4023-39e1-441ff58742de",
+      "name" : "edit_image",
+      "display_width" : null,
+      "label" : "Edit Image 1",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279.png",
+        "alt" : "Rectangle 124279",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      }
+    }, {
+      "id" : "6e3ec615-dbbd-9dbb-c17a-bab434fffc24",
+      "name" : "edit_image_2",
+      "display_width" : null,
+      "label" : "Edit Image 2",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(1).png",
+        "alt" : "Rectangle 124279 (1)",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      }
+    }, {
+      "id" : "b0ba8b78-5b76-db1e-d820-97c26585b918",
+      "name" : "edit_image_3",
+      "display_width" : null,
+      "label" : "Edit Image 3",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(2).png",
+        "alt" : "Rectangle 124279 (2)",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_image" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279.png",
+        "alt" : "Rectangle 124279",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      },
+      "edit_image_2" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(1).png",
+        "alt" : "Rectangle 124279 (1)",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "edit_image_3" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(2).png",
+        "alt" : "Rectangle 124279 (2)",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      }
+    }
+  }, {
+    "id" : "1f24812f-f207-bd94-a268-167a0bdf907d",
+    "name" : "edit_form",
+    "display_width" : null,
+    "label" : "Edit Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "7b7bd1ef-1d33-42d6-bab8-f605f4cbd3fb",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "id" : "a935be9e-158e-233c-73f1-3d64b9afbab4",
+    "name" : "edit_listing_content",
+    "display_width" : null,
+    "label" : "Edit Listing Content",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "1100d6d2-16af-7c67-4610-812011a5809d",
+      "name" : "edit_list_test",
+      "display_width" : null,
+      "label" : "Edit List Test",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "30-Days Free Trial"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "edit_list_test" : "30-Days Free Trial"
+    }, {
+      "edit_list_test" : "30-Days Free Trial"
+    }, {
+      "edit_list_test" : "30-Days Free Trial"
+    } ]
+  }, {
+    "id" : "10a8e80c-530d-580c-6d77-02e71a8d1b5b",
+    "name" : "edit_label_",
+    "display_width" : null,
+    "label" : "Edit Label ",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "be8cd279-029c-06c8-935c-33b1721212d2",
+      "name" : "edit_face",
+      "display_width" : null,
+      "label" : "Edit face",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882283%20(1).png",
+        "alt" : "Frame 787882283 (1)",
+        "loading" : "lazy",
+        "width" : 120,
+        "height" : 50,
+        "max_width" : 120,
+        "max_height" : 50
+      }
+    }, {
+      "id" : "f759fb12-87fd-eed1-1f4f-6b7d5afeb7f5",
+      "name" : "edit_label_content",
+      "display_width" : null,
+      "label" : "Edit Label Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Наши менеджеры свяжутся с вами"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_face" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882283%20(1).png",
+        "alt" : "Frame 787882283 (1)",
+        "loading" : "lazy",
+        "width" : 120,
+        "height" : 50,
+        "max_width" : 120,
+        "max_height" : 50
+      },
+      "edit_label_content" : "Наши менеджеры свяжутся с вами"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_form_heading" : "<h3>14 дней PeopleForce бесплатно</h3>\n<p>Заполните форму — и наши менеджеры свяжутся с вами</p>",
+    "edit_sales_person_images" : {
+      "edit_image" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279.png",
+        "alt" : "Rectangle 124279",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      },
+      "edit_image_2" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(1).png",
+        "alt" : "Rectangle 124279 (1)",
+        "loading" : "lazy",
+        "width" : 50,
+        "height" : 50,
+        "max_width" : 50,
+        "max_height" : 50
+      },
+      "edit_image_3" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Rectangle%20124279%20(2).png",
+        "alt" : "Rectangle 124279 (2)",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 42,
+        "max_width" : 42,
+        "max_height" : 42
+      }
+    },
+    "edit_form" : {
+      "form_id" : "7b7bd1ef-1d33-42d6-bab8-f605f4cbd3fb",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    },
+    "edit_listing_content" : [ {
+      "edit_list_test" : "30-Days Free Trial"
+    }, {
+      "edit_list_test" : "30-Days Free Trial"
+    }, {
+      "edit_list_test" : "30-Days Free Trial"
+    } ],
+    "edit_label_" : {
+      "edit_face" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787882283%20(1).png",
+        "alt" : "Frame 787882283 (1)",
+        "loading" : "lazy",
+        "width" : 120,
+        "height" : 50,
+        "max_width" : 120,
+        "max_height" : 50
+      },
+      "edit_label_content" : "Наши менеджеры свяжутся с вами"
+    }
+  }
+}, {
+  "id" : "2992d33d-28d5-4e71-af22-4cb879ae8bfd",
+  "name" : "edit_banner_image",
+  "display_width" : null,
+  "label" : "Edit Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/bg.png",
+    "alt" : "bg",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 886,
+    "max_width" : 1440,
+    "max_height" : 886
+  }
+}, {
+  "id" : "1304eebf-8754-4954-1cfb-a66fa17b5796",
+  "name" : "edit_image_group",
+  "display_width" : null,
+  "label" : "Edit Image Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6c378b02-9167-2f48-ddab-81992ee4aec4",
+    "name" : "image_1",
+    "display_width" : null,
+    "label" : "Image 1",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(5).png",
+      "alt" : "Review block (5)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    }
+  }, {
+    "id" : "1d5c36a8-aea5-f32c-6637-e4ec61253f2d",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(3).png",
+      "alt" : "Review block (3)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    }
+  }, {
+    "id" : "9505b701-2b52-7dab-a308-6ab20494b71d",
+    "name" : "image_3",
+    "display_width" : null,
+    "label" : "Image 3",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(4).png",
+      "alt" : "Review block (4)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_1" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(5).png",
+      "alt" : "Review block (5)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    },
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(3).png",
+      "alt" : "Review block (3)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    },
+    "image_3" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Review%20block%20(4).png",
+      "alt" : "Review block (4)",
+      "loading" : "lazy",
+      "width" : 144,
+      "height" : 148,
+      "max_width" : 144,
+      "max_height" : 148
+    }
+  }
+}, {
+  "id" : "c6a86573-0913-7d20-a32b-48366897f905",
+  "name" : "edit_widget_group",
+  "display_width" : null,
+  "label" : "Edit Widget Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "d244de2e-35cb-04d5-90f1-14a4c1ad463b",
+    "name" : "edit_icon",
+    "display_width" : null,
+    "label" : "Edit Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/image_3__2_-removebg-preview.png",
+      "alt" : "image_3__2_-removebg-preview",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    }
+  }, {
+    "id" : "a6c9088b-4307-c423-fc01-beeada994872",
+    "name" : "edit_content",
+    "display_width" : null,
+    "label" : "Edit Content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Capterra"
+  }, {
+    "id" : "11f26b0a-11b1-b420-c71e-4c9ddf89be81",
+    "name" : "edit_star_group",
+    "display_width" : null,
+    "label" : "Edit Star Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "0237d134-1e8f-84aa-5786-9bfab6ca43a0",
+      "name" : "edit_star",
+      "display_width" : null,
+      "label" : "Edit Star",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    } ]
+  }, {
+    "id" : "5c80c35d-888d-9178-15df-fe6ebef1e2d9",
+    "name" : "edit_rating",
+    "display_width" : null,
+    "label" : "Edit Rating",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "4.6 star rating"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/image_3__2_-removebg-preview.png",
+      "alt" : "image_3__2_-removebg-preview",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "Capterra",
+    "edit_star_group" : [ {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    } ],
+    "edit_rating" : "4.6 star rating"
+  }, {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/image_3__2_-removebg-preview.png",
+      "alt" : "image_3__2_-removebg-preview",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "Capterra",
+    "edit_star_group" : [ {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    } ],
+    "edit_rating" : "4.6 star rating"
+  }, {
+    "edit_icon" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/image_3__2_-removebg-preview.png",
+      "alt" : "image_3__2_-removebg-preview",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "edit_content" : "Capterra",
+    "edit_star_group" : [ {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    }, {
+      "edit_star" : {
+        "size_type" : "auto",
+        "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Shape.svg",
+        "alt" : "Shape",
+        "loading" : "lazy",
+        "width" : 14,
+        "height" : 13,
+        "max_width" : 14,
+        "max_height" : 13
+      }
+    } ],
+    "edit_rating" : "4.6 star rating"
+  } ]
+} ]

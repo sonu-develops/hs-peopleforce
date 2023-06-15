@@ -1,0 +1,40 @@
+<div class="cont-imgtv" style="background-image:url({{ module.add_background_image.src }});">
+	<div class="container">
+		<div class="cont-imgt-main d-flex">
+			<div class="cont-left">
+				<div class="cont-left-in">
+					<div class="cont-lft-t">
+						{{ module.edit_left_section.edit_left_content }}
+					</div>
+					<div class="cont-btns">
+						{% set href = module.edit_left_section.edit_button_group.edit_button_link.url.href %}
+						{% if module.edit_left_section.edit_button_group.edit_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+							{% set href = "mailto:" + href %}
+						{% endif %}
+						<a class="btn btn btn-primary w-full w-lg-auto" href="{{ href }}"
+							{% if module.edit_left_section.edit_button_group.edit_button_link.open_in_new_tab %}target="_blank"{% endif %}
+							{% if module.edit_left_section.edit_button_group.edit_button_link.rel %}rel="{{ module.edit_left_section.edit_button_group.edit_button_link.rel }}"{% endif %}
+							>
+							{{ module.edit_left_section.edit_button_group.edit_button_text }}
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="cont-right">
+				<div class="cont-img">
+					{% if module.edit_image.src %}
+						{% set sizeAttrs = 'width="{{ module.edit_image.width }}" height="{{ module.edit_image.height }}"' %}
+						{% if module.edit_image.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ module.edit_image.width }}" height="{{ module.edit_image.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif module.edit_image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ module.edit_image.max_width }}" height="{{ module.edit_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = module.edit_image.loading != 'disabled' ? 'loading="{{ module.edit_image.loading }}"' : '' %}
+						<img src="{{ module.edit_image.src }}" alt="{{ module.edit_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 

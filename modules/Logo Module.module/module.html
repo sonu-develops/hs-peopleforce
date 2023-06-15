@@ -1,0 +1,20 @@
+<div class="logo-mp">
+	<div class="container-mt">
+		<div class="logo-mt d-flex">
+			{% for item in module.edit_listing %}
+				<div class="logo-item">
+					{% if item.edit_logo.src %}
+						{% set sizeAttrs = 'width="{{ item.edit_logo.width }}" height="{{ item.edit_logo.height }}"' %}
+						{% if item.edit_logo.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ item.edit_logo.width }}" height="{{ item.edit_logo.height }}" style="max-width: 100%; height: auto;"' %}
+							{% elif item.edit_logo.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.edit_logo.max_width }}" height="{{ item.edit_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.edit_logo.loading != 'disabled' ? 'loading="{{ item.edit_logo.loading }}"' : '' %}
+						<img src="{{ item.edit_logo.src }}" alt="{{ item.edit_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

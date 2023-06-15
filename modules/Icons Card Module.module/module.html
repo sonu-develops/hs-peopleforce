@@ -1,0 +1,44 @@
+<div class="icn-card">
+	<div class="container">
+		<div class="icn-card-gp"> 
+			<div class="icn-heading">
+				{{ module.edit_heading }}
+			</div>
+			<div class="icn-main d-flex mrg-lt-rt">
+				{% for item in module.edit_button_group %}
+					<div class="icn-items col-3">
+							<div class="icn-style">
+						<div class="ice-img">
+							{% if item.edit_icon.src %}
+								{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}"' %}
+								{% if item.edit_icon.size_type == 'auto' %}
+									{% set sizeAttrs = 'width="{{ item.edit_icon.width }}" height="{{ item.edit_icon.height }}" style="max-width: 100%; height: auto;"' %}
+									{% elif item.edit_icon.size_type == 'auto_custom_max' %}
+									{% set sizeAttrs = 'width="{{ item.edit_icon.max_width }}" height="{{ item.edit_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+								{% endif %}
+								{% set loadingAttr = item.edit_icon.loading != 'disabled' ? 'loading="{{ item.edit_icon.loading }}"' : '' %}
+								<img src="{{ item.edit_icon.src }}" alt="{{ item.edit_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+							{% endif %}
+						</div>
+						<div class="ice-content">
+							{{ item.edit_content }}
+						</div>
+						<div class="ice-buttons">
+							{% set href = item.edit_button_link.link_field.url.href %}
+							{% if item.edit_button_link.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+								{% set href = "mailto:" + href %}
+							{% endif %}
+							<a href="{{ href }}"
+								{% if item.edit_button_link.link_field.open_in_new_tab %}target="_blank"{% endif %}
+								{% if item.edit_button_link.link_field.rel %}rel="{{ item.edit_button_link.link_field.rel }}"{% endif %}
+								>
+								{{ item.edit_button_link.edit_button_text }}
+							</a>
+						</div>
+            </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+<div class="test-header">
+	<div class="container">
+		<div class="tt-headerr">
+			{{ module.edit_heading_content }}
+		</div>
+	</div>
+</div>
+<div class="test-slider">
+	<div id="test-slider" class="owl-carousel owl-theme">
+		{% for item in module.edit_testimonal_module %}
+			<div class="item">
+				
+				<div class="slider-main">
+					
+					<div class="slider-img">
+						{% if item.edit_logo.src %}
+							{% set sizeAttrs = 'width="{{ item.edit_logo.width }}" height="{{ item.edit_logo.height }}"' %}
+							{% if item.edit_logo.size_type == 'auto' %}
+								{% set sizeAttrs = 'width="{{ item.edit_logo.width }}" height="{{ item.edit_logo.height }}" style="max-width: 100%; height: auto;"' %}
+								{% elif item.edit_logo.size_type == 'auto_custom_max' %}
+								{% set sizeAttrs = 'width="{{ item.edit_logo.max_width }}" height="{{ item.edit_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = item.edit_logo.loading != 'disabled' ? 'loading="{{ item.edit_logo.loading }}"' : '' %}
+							<img src="{{ item.edit_logo.src }}" alt="{{ item.edit_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+					<div class="badge-gpt">
+						<p>{{ item.edit_feedback }}</p>
+						<div class="star-sec d-flex">
+							<div class="str-left">
+								{{ item.edit_rating_number }}
+							</div>
+							<div class="str-right">
+								
+								<ul>
+									
+									{% for item2 in item.edit_star %}
+										<li>
+											{% if item2.edit_star.src %}
+												{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}"' %}
+												{% if item2.edit_star.size_type == 'auto' %}
+													{% set sizeAttrs = 'width="{{ item2.edit_star.width }}" height="{{ item2.edit_star.height }}" style="max-width: 100%; height: auto;"' %}
+													{% elif item2.edit_star.size_type == 'auto_custom_max' %}
+													{% set sizeAttrs = 'width="{{ item2.edit_star.max_width }}" height="{{ item2.edit_star.max_height }}" style="max-width: 100%; height: auto;"' %}
+												{% endif %}
+												{% set loadingAttr = item2.edit_star.loading != 'disabled' ? 'loading="{{ item2.edit_star.loading }}"' : '' %}
+												<img src="{{ item2.edit_star.src }}" alt="{{ item2.edit_star.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+											{% endif %}
+											
+										</li>
+									{% endfor %}
+									
+									
+								</ul>
+							</div>
+						</div>
+						<div class="str-btm">
+							{{ item.edit_profile_details }}
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		{% endfor %}
+	</div>
+	
+</div>

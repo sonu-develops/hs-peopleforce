@@ -1,0 +1,399 @@
+[ {
+  "id" : "6fc7bfb8-f1c5-3e0a-4b47-64c7bdb52121",
+  "name" : "edit_left_group",
+  "display_width" : null,
+  "label" : "Edit Left Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7ef71801-d5c0-9924-7b80-170d6a03ad86",
+    "name" : "edit_heading_content",
+    "display_width" : null,
+    "label" : "Edit Heading Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2>Flawless integrations<br>with your tools</h2>\n<p>Начните с 14-дневного тестирования</p>"
+  }, {
+    "id" : "e66d63c9-13f8-8dd3-395d-f0931a338319",
+    "name" : "edit_button_group",
+    "display_width" : null,
+    "label" : "Edit Button Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2e29ef85-dea7-27b9-5716-c35b68016a7d",
+      "name" : "edit_button_text",
+      "display_width" : null,
+      "label" : "Edit Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "See all tools"
+    }, {
+      "id" : "16331f8c-3fc1-b26d-a226-039fe9035bdf",
+      "name" : "edit_button_link",
+      "display_width" : null,
+      "label" : "Edit Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_button_text" : "See all tools",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_heading_content" : "<h2>Flawless integrations<br>with your tools</h2>\n<p>Начните с 14-дневного тестирования</p>",
+    "edit_button_group" : {
+      "edit_button_text" : "See all tools",
+      "edit_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "99f2acbe-34d1-f802-6e9f-a144408fbf3a",
+  "name" : "edit_right_section",
+  "display_width" : null,
+  "label" : "Edit Right Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "caf9c6a1-74c3-20e3-c0e2-8a30f06e21bc",
+    "name" : "service_logo",
+    "display_width" : null,
+    "label" : "Service Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881711.png",
+      "alt" : "Frame 787881711",
+      "loading" : "lazy",
+      "width" : 478,
+      "height" : 88,
+      "max_width" : 478,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "3972532b-d4ee-855a-f026-ac9e6d08fd81",
+    "name" : "edit_text_group",
+    "display_width" : null,
+    "label" : "Edit Text Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "00582052-9611-2324-7214-e3503a0d1480",
+      "name" : "edit_content",
+      "display_width" : null,
+      "label" : "Edit Content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "and more that 120+ tools to integrate"
+    }, {
+      "id" : "ff5b1f37-d601-e376-5be9-0699e651326e",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "edit_content" : "and more that 120+ tools to integrate",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "service_logo" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881711.png",
+      "alt" : "Frame 787881711",
+      "loading" : "lazy",
+      "width" : 478,
+      "height" : 88,
+      "max_width" : 478,
+      "max_height" : 88
+    },
+    "edit_text_group" : {
+      "edit_content" : "and more that 120+ tools to integrate",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "ba639c9f-7e5d-a7b7-61d7-2380c15b7616",
+  "name" : "edit_icons_group",
+  "display_width" : null,
+  "label" : "Edit Icons Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "78ffdf6a-0ca9-d622-ab9d-d50e706a4189",
+    "name" : "edit_icon_1",
+    "display_width" : null,
+    "label" : "Edit Icon 1",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881707.png",
+      "alt" : "Frame 787881707",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "0af2ef3d-eb01-85ab-8b82-a69e7dedae26",
+    "name" : "edit_icon_2",
+    "display_width" : null,
+    "label" : "Edit Icon 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881708.png",
+      "alt" : "Frame 787881708",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "ad56ad2e-cad9-a1c6-3776-69cecf4c61e4",
+    "name" : "edit_icon_3",
+    "display_width" : null,
+    "label" : "Edit Icon 3",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881709%20(2).png",
+      "alt" : "Frame 787881709 (2)",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "67c674d0-16cb-a9c1-f152-f3574bb29e24",
+    "name" : "edit_icon_4",
+    "display_width" : null,
+    "label" : "Edit Icon 4",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881715.png",
+      "alt" : "Frame 787881715",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "268df5be-f141-3b63-7bd3-9b5d8f1e2e9e",
+    "name" : "edit_icon_5",
+    "display_width" : null,
+    "label" : "Edit Icon 5",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881716.png",
+      "alt" : "Frame 787881716",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "b1414521-99b4-c20c-8407-d7cc44be7283",
+    "name" : "edit_icon_6",
+    "display_width" : null,
+    "label" : "Edit Icon 6",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881717.png",
+      "alt" : "Frame 787881717",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "edit_icon_1" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881707.png",
+      "alt" : "Frame 787881707",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    },
+    "edit_icon_2" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881708.png",
+      "alt" : "Frame 787881708",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    },
+    "edit_icon_3" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881709%20(2).png",
+      "alt" : "Frame 787881709 (2)",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    },
+    "edit_icon_4" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881715.png",
+      "alt" : "Frame 787881715",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    },
+    "edit_icon_5" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881716.png",
+      "alt" : "Frame 787881716",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    },
+    "edit_icon_6" : {
+      "size_type" : "auto",
+      "src" : "https://24983810.fs1.hubspotusercontent-eu1.net/hubfs/24983810/Frame%20787881717.png",
+      "alt" : "Frame 787881717",
+      "loading" : "lazy",
+      "width" : 88,
+      "height" : 88,
+      "max_width" : 88,
+      "max_height" : 88
+    }
+  }
+} ]
